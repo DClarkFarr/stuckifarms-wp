@@ -13,12 +13,12 @@ page_title_block(get_the_title( $blogPage->ID ));
 						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 							<div class="row mb-5">
 								<div class="col-lg-5">
-									<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'blog-thumb'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
+									<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'blog-thumb'); ?>" alt="<?php the_title(); ?>" class="img-fluid rounded post-img">
 								</div>
 								<div class="col-lg-7 align-self-lg-stretch">
 									<div class="d-flex flex-column" style="height: 100%;">
 										<div>
-											<h3 class="h2" ><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+											<h3 class="h2" ><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>" class="psot-t"><?php the_title(); ?></a></h3>
 										</div>
 										<div>
 											<p class="post-comments">
@@ -27,7 +27,7 @@ page_title_block(get_the_title( $blogPage->ID ));
 													'<span datetime="' . get_the_time('Y-m-d') . '">' . get_the_time(get_option('date_format')) . '</span>',
 													/* the author of the post */
 													'<span class="by">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>',
-													'<span class="commentsCount">'. get_comments_number('0', '1', '') .'</span>'
+													'<span class="commentsCount">'. get_comments_number('0', '1', '') .' comments</span>'
 												); ?>
 											</p>
 										</div>
@@ -41,7 +41,7 @@ page_title_block(get_the_title( $blogPage->ID ));
 											?>
 										</div>
 										<div class="mt-auto mb-3">
-											<a href="<?php the_permalink(); ?>" class="btn btn-theme btn-rounded">Read More</a>
+											<a href="<?php the_permalink(); ?>" class="btn btn-rounded post-btn">Continue Reading</a>
 										</div>
 									</div>
 									
@@ -50,7 +50,7 @@ page_title_block(get_the_title( $blogPage->ID ));
 								</div>
 							</div>
 						</div>
-
+                        <hr class="post-hr">
 
 					<?php endwhile; ?>
 

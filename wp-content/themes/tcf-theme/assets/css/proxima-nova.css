@@ -17,3 +17,12 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'sego-ui';
+    src: url('../webfonts/SegoeUI.eot');
+    src: url('../webfonts/SegoUI.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/SegoUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

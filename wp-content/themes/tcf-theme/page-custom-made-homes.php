@@ -25,18 +25,23 @@ if (have_posts()){
                 <h1 class="heading-alt">
                     <?php the_field('page_subheading'); ?>
                 </h1>
-                <br>
-                <div class="row mb-5">
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php the_title(); ?>">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="big-text">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
-                </div>
+                
 
+               <h2 class="page-heading">Build your dream house at Stucki Farms</h2>
+               
+               
+               <div class="row mgrt-40">
+                   <div class="col-md-6">
+                       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/custom-homes.jpg" alt="" class="img-fluid">
+                   </div>
+                   <div class="col-md-6">
+                       <p class="custom-home-p m-mgrt-20">
+                           At Stucki Farms you can choose the plan you want, either is an existing one we have or have our designers to create your especial plan. We have a wide variety of plans for you to choose, houses of all sizes and shapes. You can always bring your own perfect plan or the imperfect one for us to perfect it for you, no matter how, we will get you the home that you have been dreaming about.
+
+                       </p>
+                   </div>
+               </div>
+               
                 <div class="property-buttons mgrt-40">
                     <a href="" class="btn btn-link btn-arrow">SUBMIT A PLAN</a>
                     <a href="" class="btn btn-link btn-arrow">CHOOSE A PLAN</a>

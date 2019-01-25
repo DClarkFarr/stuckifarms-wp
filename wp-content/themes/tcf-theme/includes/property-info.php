@@ -3,10 +3,12 @@
 <div class="row">
     <div class="col-md-4">
         <dl class="row">
-        <?php foreach($fields as $field){ ?>
-            <dt class="col-4 text-right"><?php echo $field['label']; ?></dt>
-            <dd class="col-8"><?php echo $field['value']; ?></dd>
-        <?php } ?>
+         
+          <?php foreach($fields as $field){ ?>
+                <dt class="col-4 text-right"><?php echo $field['label']; ?></dt>
+                <dd class="col-8"><?php echo $field['value']; ?></dd>
+            <?php } ?>
+
         </dl>
     </div>
     <div class="col-md-8">

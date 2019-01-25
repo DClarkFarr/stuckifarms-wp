@@ -5,7 +5,7 @@ $blogPage = get_page(get_option('page_for_posts', true));
 page_title_block(get_the_title( $blogPage->ID ));
 ?>
 
-<section class="section">
+<section class="section post">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
