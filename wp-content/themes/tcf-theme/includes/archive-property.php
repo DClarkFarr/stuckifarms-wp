@@ -1,6 +1,6 @@
 <section class="section">
     <div class="container">
-        <h2 class="heading-alt">Find the perfect home</h2>
+        <h2 class="heading-alt"><?php echo get_field('page_subheading', $page->ID) ?: 'Find the perfect home'; ?></h2>
 
         <?php 
         $category = get_field('page_category', $page->ID);

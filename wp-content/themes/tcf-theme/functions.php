@@ -432,4 +432,69 @@ function get_price_text($str){
     return $str;
 }
 
+function propertyPageInfo($options = []){
+    $options = array_merge([
+        'page' => null,
+        'property' => null,
+        'autoselect' => false,
+        'slug' => null,
+    ], $options);
+
+    if(!empty($options['property']) ) {
+        $options['page'] = pageByProperty($options['property']);
+    }
+
+    $parent = !empty($options['page']->post_parent) ? get_page($options['page']->post_parent) : $options['page'];
+
+    $options['slug'] = !empty($options['slug']) ? $options['slug'] : $parent->post_name;
+    $pages = propertyPagesBySlug($options['slug']);
+
+    $activePage = $options['autoselect'] ? reset($pages) : false;
+
+    foreach($pages as $p){
+        if($p->ID == $options['page']->ID){
+            $activePage = $p;
+            break;
+        }
+    }
+    return ['active' => $activePage, 'pages' => $pages];
+}
+function pageByProperty($property){
+    $terms = get_terms([
+        'taxonomy' => 'property_cat',
+        'hide_empty' => true,
+        'object_ids' => [$property->ID],
+    ]);
+
+    if($terms){
+        $category = reset($terms);
+
+        $the_query = new WP_Query([
+            'post_type' => 'page',
+            'posts_per_page' => 1, 
+            'meta_query' => array(                  
+                'relation' => 'AND',                
+                array(
+                    'key' => 'page_category',                
+                    'value' => $category->term_id,                
+                    'compare' => '=',
+                ),
+            ),
+        ]);
+
+        if($the_query->have_posts()){
+            $page = clone $the_query->posts[0];
+        }
+
+        wp_reset_query();
+    }
+    return $page;
+}
+function propertyPagesBySlug($slug){
+    return get_pages([
+        'parent' => get_page_by_path($slug)->ID,
+        'sort_column' => "menu_order",
+        'sort_order' => 'ASC',
+    ]);
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>

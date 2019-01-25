@@ -18,7 +18,7 @@ if (have_posts()){
         the_post();
         page_title_block('VACATION AT STUCKI FARMS');
 
-		load_include('property-breadcrumb', ['page' => $post]);
+		load_include('property-breadcrumb', ['page' => $post, 'parent_slug' => 'invest-here']);
 
 		?>
       

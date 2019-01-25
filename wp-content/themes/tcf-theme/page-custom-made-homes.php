@@ -15,20 +15,26 @@
 if (have_posts()){
     while (have_posts()){
         the_post();
+
         page_title_block('Live at Stucki Farms');
 
-		load_include('property-breadcrumb', ['page' => $post]);
+		$info = propertyPageInfo([
+			'page' => $post,
+			'slug' => 'live-here',
+			'autoselect' => true,
+		]);
+
+		load_include('breadcrumbs-pages', [
+			'active' => $info['active'],
+			'pages' => $info['pages'],
+		]);
 
 		?>
         <section class="section">
             <div class="container">
                 <h1 class="heading-alt">
                     <?php the_field('page_subheading'); ?>
-                </h1>
-                
-
-               <h2 class="page-heading">Build your dream house at Stucki Farms</h2>
-               
+                </h1>               
                
                <div class="row mgrt-40">
                    <div class="col-md-6">

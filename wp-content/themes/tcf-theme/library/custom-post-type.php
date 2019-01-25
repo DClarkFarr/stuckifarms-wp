@@ -238,6 +238,13 @@ function property_cpt() {
 					'value' => '7',
 				),
 			),
+			array(
+				array(
+					'param' => 'page_parent',
+					'operator' => '==',
+					'value' => '11',
+				),
+			),
 		),
 		'menu_order' => 0,
 		'position' => 'normal',

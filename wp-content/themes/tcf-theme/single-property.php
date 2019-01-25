@@ -20,7 +20,14 @@ if(have_posts()){
 		
 		page_title_block('Live at Stucki Farms');		
 
-		load_include('property-breadcrumb', ['page' => false, 'property' => $post]);
+		$info = propertyPageInfo([
+			'property' => $post,
+		]);
+
+		load_include('breadcrumbs-pages', [
+			'active' => $info['active'],
+			'pages' => $info['pages'],
+		]);
 
 		load_include('property-single', ['property'=> $post]);
 	}
