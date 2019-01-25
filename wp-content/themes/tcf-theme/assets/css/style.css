@@ -737,11 +737,6 @@ footer .list-inline li a {
     src: url("../webfonts/Roboto-Medium.ttf");
 }
 
-@font-face {
-    font-family: open-sans;
-    src: url("../webfonts/OpenSans-Regular.ttf");
-}
-
 .news-head {
     font-family: roboto-reg;
     font-size: 92px;
@@ -872,20 +867,11 @@ footer .list-inline li a {
 }
 
 .psot-t {
-    font-family: 'Arial';
-    font-size: 20px;
     color: #212121;
-}
-
-.blog-content {
-    font-family: open-sans;
-    font-size: 14px;
-    color: #666666;
 }
 
 .post-comments {
     color: #999999;
-    font-family: open-sans;
 }
 
 .post-img {
@@ -946,29 +932,23 @@ footer .list-inline li a {
 }
 
 .custom-html-widget {
-    font-family: open-sans;
-    font-size: 14px;
     color: #999999;
 }
 
-.cat-item {
+.widget ul {
     list-style: none;
+    padding-left: 15px;
 }
 
-.cat-item a {
-    font-family: open-sans;
+.widget ul a {
     font-size: 14px;
     color: #999999;
 }
 
-.cat-item a:hover {
+.widget ul a:hover {
     color: #3F51B5;
     margin-left: 0px;
     padding-left: 0px;
-}
-
-#categories-2 ul {
-    padding-left: 15px;
 }
 
 .wpp-list-with-thumbnails {
@@ -985,13 +965,11 @@ footer .list-inline li a {
 }
 
 #wpp-2 .wpp-post-title {
-    font-family: open-sans;
     font-size: 14px;
     color: #666666;
 }
 
 #wpp-2 .wpp-date {
-    font-family: open-sans;
     font-size: 13px;
     color: #999999;
     font-weight: normal;

@@ -41,7 +41,7 @@ page_title_block(get_the_title( $blogPage->ID ));
 											?>
 										</div>
 										<div class="mt-auto mb-3">
-											<a href="<?php the_permalink(); ?>" class="btn btn-rounded post-btn">Continue Reading</a>
+											<a href="<?php the_permalink(); ?>" class="btn btn-rounded btn-theme">Continue Reading</a>
 										</div>
 									</div>
 									
