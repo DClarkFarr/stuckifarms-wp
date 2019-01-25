@@ -27,7 +27,6 @@ if (have_posts()){
 		
 		$info = propertyPageInfo([
 			'page' => $post,
-			'slug' => 'live-here',
 			'autoselect' => true,
 		]);
 
