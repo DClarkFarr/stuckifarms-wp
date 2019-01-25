@@ -18,7 +18,13 @@ if (have_posts()){
         the_post();
         page_title_block('VACATION AT STUCKI FARMS');
 
-		load_include('property-breadcrumb', ['page' => $post]);
+		$info = propertyPageInfo([
+			'page' => $post,
+		]);
+        load_include('breadcrumbs-pages', [
+			'active' => $info['active'],
+			'pages' => $info['pages'],
+		]);
 
 		?>
         <section class="section">
