@@ -49,4 +49,15 @@ $(function(){
       }   
     }); 
   }
+
+  if( $('.builder-carousel').length){
+    $('.builder-carousel').owlCarousel({
+        //center: true,
+        items:1,
+        loop:true,
+        margin:10,
+        dots: false,
+        nav: true,
+    });
+  }
 });

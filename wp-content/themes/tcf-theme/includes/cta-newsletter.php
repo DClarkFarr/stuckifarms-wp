@@ -6,28 +6,8 @@
         </p>
 
         <div class="newsletter-form py-4">
-<!--            <?php echo do_shortcode('[contact-form-7 id="126" title="Newsletter form"]'); ?>-->
-       
-       <form action="" class="form-newsl mgrt-50">
-           <div class="row">
-               <div class="col-md-8">
-                   <div class="row">
-                       <div class="col-md-4">
-                           <input type="text" class="form-control" placeholder="Full Name">
-                       </div>
-                       <div class="col-md-1"></div>
-                       <div class="col-md-6">
-                           <input type="text" class="form-control" placeholder="Email Address">
-                       </div>
-                   </div>
-               </div>
-               <div class="col-md-4">
-                   <button type="submit" class="btn btn-green">SUBSCRIBE NOW!</button>
-               </div>
-           </div>
-       </form>
-       
-       
+            
+            <?php echo do_shortcode('[contact-form-7 id="126" title="Newsletter form"]'); ?>
        
         </div>
     </div>
