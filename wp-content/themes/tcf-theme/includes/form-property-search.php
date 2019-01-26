@@ -1,5 +1,6 @@
 <section class="section section-sm bg-theme">
     <form action="<?php echo get_home_url() . '/property-search/'; ?>">
+        <input type="hidden" name="new_search" value="1">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-3">
