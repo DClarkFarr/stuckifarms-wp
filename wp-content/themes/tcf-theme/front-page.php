@@ -20,6 +20,11 @@
 	</video>
 </section>
 
+<div class="home-search-wrap">
+    <?php load_include('form-property-search'); ?>
+</div>   
+       
+
 <section class="section">
     <div class="container">
         <div class="carousel-wrap">
@@ -59,8 +64,7 @@
     </div>         
 </section>
         
-       
-       
+
 <section class="section parallax" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2.jpg);">
     
     <div class="container">
@@ -74,17 +78,17 @@
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-4-2-cir.jpg" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Cottages</h3>
-                        <center><a href="" class="btn btn-book-green m-btn-book-2">Book Now</a></center>
+                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2">Book Now</a></div>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2-cir2.jpg" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Cottage Courts</h3>
-                        <center><a href="" class="btn btn-book-green m-btn-book-2">Buy Now</a></center>
+                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2">Buy Now</a></div>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cir3.png" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Villas</h3>
-                        <center><a href="" class="btn btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></center>
+                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></div>
                     </div>
                     
                 </div>

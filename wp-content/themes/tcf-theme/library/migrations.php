@@ -118,5 +118,23 @@ foreach($buyerToolsPages as $row){
     }
 }
 
+$otherPages = [
+    [
+        'post_title' => 'Property Search',
+        'post_name' => 'property-search',
+    ],
+];
+
+
+foreach($otherPages as $row){
+    $exists = get_page_by_path($row['post_name']);
+    echo 'checking page ' . $row['post_name'] . ': ';
+    if(!$exists){
+        echo 'creating ' . "\n";
+        create_page($row);
+    }else{
+        echo 'exists ' . "\n";
+    }
+}
 
 echo '<pre>';
