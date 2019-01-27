@@ -63,6 +63,9 @@ Site Theme
 .btn-theme.active,
 .btn-theme:hover,
 .btn-theme:focus,
+.btn-green.active,
+.btn-green:hover,
+.btn-green:focus,
 .btn-theme-alt,
 .btn-theme-alt.active,
 .btn-theme-alt:hover,
@@ -261,10 +264,8 @@ header .navbar-toggler {
     }
 }
 .carousel-wrap {
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .builder-carousel {
 	position: relative;
@@ -801,11 +802,6 @@ footer .list-inline li a {
     font-size: 20px;
     font-family: roboto-reg;
 }
-
-.btn-green:hover {
-    color: #0056b3;
-}
-
 .form-newsl .form-control {
     height: 51px;
 }
@@ -1038,22 +1034,28 @@ footer .list-inline li a {
 }
 
 .builder-carousel .head-slide {
-    font-size:64px;
-    font-weight:500;
-    color:#868686;
-    line-height:1.2;
-    text-align:left;
+    font-size: 86px;
+    font-weight: 600;
+    color: #868686;
+    line-height: 1.2;
+    text-align: left;
 }
 .builder-carousel .sub-slide-w {
-    font-size:36px;
-    font-weight:400;
-    color:#868686;
-    line-height:1.2;
-    text-align:left;
+    font-size: 46px;
+    font-weight: 600;
+    color: #868686;
+    line-height: 1.2;
+    text-align: left;
     margin-top: 1rem;
 }
 .builder-carousel .btn {
-    margin-top: 4rem;
+    margin-top: 6rem;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 @media(max-width: 1200px) {
