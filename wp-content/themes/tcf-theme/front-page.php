@@ -18,14 +18,82 @@
 	<video autoplay muted loop id="myVideo">
 		<source src="<?php echo get_img_directory(); ?>/home-video-web.mp4" type="video/mp4">
 	</video>
+    <div class="container h-100">
+        <div class="banner-content h-100 d-flex flex-columns">
+            <div class="content-block text-white p-5 mt-auto">
+                <h1>STUCKI FARMS</h1>
+                <h4>
+                    Come visit us and see why Stucki Farms is<br>
+                    "A Great Place To Come Home To!"
+                </h4>
+                <a class="btn btn-lg btn-square btn-theme-alt mt-5">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+    
 </section>
 
 <div class="home-search-wrap">
     <?php load_include('form-property-search'); ?>
 </div>   
        
-
-<section class="section">
+<section class="section section-lg planned-community">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 class="text-theme mb-5 mr-lg-5 pr-xl-5">
+                    A community
+                    planned for
+                    families
+                </h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="icon-block pr-5 pb-lg-3 mb-5">
+                            <i class="mb-4 far fa-house-flood"></i>
+                            <span class="text-dark font-weight-bold">Buy a house here</span>
+                            <p class="text-lighter">
+                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="icon-block pr-5 pb-lg-3 mb-5">
+                            <i class="mb-4 far fa-plane"></i>
+                            <span class="text-dark font-weight-bold">Spend Vacation here</span>
+                            <p class="text-lighter">
+                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-lg-6">
+                        <div class="icon-block pr-5 mb-5 mb-lg-0">
+                            <i class="mb-4 far fa-hand-holding-usd"></i>
+                            <span class="text-dark font-weight-bold">Invest here</span>
+                            <p class="text-lighter">
+                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="icon-block pr-5 mb-5 mb-lg-0">
+                            <i class="mb-4 far fa-truck"></i>
+                            <span class="text-dark font-weight-bold">Build Here</span>
+                            <p class="text-lighter">
+                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="section">
     <div class="container">
         <div class="carousel-wrap">
             <div class="owl-carousel builder-carousel">
@@ -62,7 +130,7 @@
             </div>
         </div>
     </div>         
-</section>
+</section> -->
         
 
 <section class="section parallax" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2.jpg);">
@@ -102,9 +170,12 @@
     
     
 </section>
+
+<?php load_include('testimonials-carousel'); ?>
        
-<?php load_include('cta-newsletter'); ?>
-               
+<?php load_include('cta-newsletter-inline'); ?>
+
+<!--             
 <section class="section home-wagon" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/StuckiFarms-home-wagon.jpg);">
     <div class="container">
         <div class="row mgrt-400 mgrb-80">
@@ -124,4 +195,5 @@
         </div>
     </div>
 </section>
+-->
         

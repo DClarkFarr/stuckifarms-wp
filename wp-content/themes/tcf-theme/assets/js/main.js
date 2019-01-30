@@ -60,4 +60,15 @@ $(function(){
         nav: true,
     });
   }
+
+  if( $('.testimonials-carousel').length){
+    $('.testimonials-carousel').owlCarousel({
+        //center: true,
+        items:1,
+        loop:true,
+        margin:10,
+        dots: true,
+        nav: false,
+    });
+  }
 });
