@@ -60,8 +60,11 @@
 			<div class="footer-bottom bg-black text-white text-center py-4">
 				<div class="container">
 					<div class="d-flex w-100 align-items-center">
-						<div>
+						<div class="mr-4">
 							All Rights Reserved 2018 Stucki Farms Inc.
+						</div>
+						<div class="mr-4">
+							Designed and developed by <a href='https://thecodeframe.com' target="_blank">The Code Frame</a>
 						</div>
 						<div class="ml-auto">
 							<?php 
