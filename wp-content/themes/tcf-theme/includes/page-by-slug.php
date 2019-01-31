@@ -1,8 +1,7 @@
 <?php 
 $map = [
-    'cottages' => 'coming-soon',
-    'cottages-court' => 'coming-soon',
-    'villas' => 'coming-soon',
+    'cottages' => 'rentals-cottages',
+    'villas' => 'rentals-villas',
 ];
 
 $slug = isset($map[$post->post_name]) ? $map[$post->post_name] : 'page-' . $post->post_name; 

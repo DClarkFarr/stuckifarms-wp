@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <p>
-                    Fill out all required fields to send a message. You have to login to your wordpress account to post any comment. Please don´t spam, thank you!
+                    Fill out the form below and we'll get back to you with whatever you need to know!
                 </p>
             </div>
         </div>

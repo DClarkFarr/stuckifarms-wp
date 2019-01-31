@@ -11,7 +11,7 @@ echo "</div>";
 
 echo "<section class='section-sm'>";
     echo "<div class='container'>";
-        load_include('property-info', ['property' => $property, 'fields' => $fields, 'property_type' => $property_type]);
+        load_include('property-info', ['property' => $property, 'fields' => $fields, 'property_type' => $property_type, 'page' => $page]);
     echo "</div>";
 echo "</section>";
 

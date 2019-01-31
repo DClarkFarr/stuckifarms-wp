@@ -29,7 +29,7 @@ if(have_posts()){
 			'pages' => $info['pages'],
 		]);
 
-		load_include('property-single', ['property'=> $post]);
+		load_include('property-single', ['property'=> $post, 'page' => $info['active']]);
 	}
 }else{
 	?>

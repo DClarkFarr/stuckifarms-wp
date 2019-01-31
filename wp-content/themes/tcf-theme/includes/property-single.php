@@ -24,5 +24,6 @@ $fields = array_filter($fields, function($field){
 load_include('property-' . $property_type, [
     'property' => $property,
     'fields' => $fields,
-    'property_type' => $property_type
+    'property_type' => $property_type,
+    'page' => $page,
 ]);

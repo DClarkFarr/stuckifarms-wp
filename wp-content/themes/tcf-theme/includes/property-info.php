@@ -23,24 +23,24 @@
             ?>
             <div class="col-lg-4 mb-4">
                 <?php if($download){ ?>
-                    <a href="<?php echo $download; ?>" class="btn btn-arrow">Download Plan</a>
+                    <a href="<?php echo $download; ?>" class="btn btn-arrow"><span>Download Plan</span></a>
                 <?php } ?>
             </div>
             <div class="col-lg-4 mb-4">
-                <a href="" class="btn btn-arrow">Calculate Mortgage</a>
+                <a href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/" class="btn btn-arrow"><span>Calculate Mortgage</span></a>
             </div>
             <div class="col-lg-4 mb-4">
-                <a href="" class="btn btn-arrow">Talk to an Agent</a>
+                <a href="<?php echo site_url(); ?>/contact/?from=talk" class="btn btn-arrow"><span>Talk to an Agent</span></a>
             </div>
             <div class="w-100"></div>
             <div class="col-lg-4 mb-4">
-                <a href="" class="btn btn-arrow">Buy it Now</a>
+                <a href="<?php echo site_url(); ?>/contact/?from=buy" class="btn btn-arrow"><span>Buy it Now</span></a>
             </div>
             <div class="col-lg-4 mb-4">
-                <a href="" class="btn btn-arrow">Schedule a Visit</a>
+                <a href="<?php echo site_url(); ?>/contact/?from=schedule" class="btn btn-arrow"><span>Schedule a Visit</span></a>
             </div>
             <div class="col-lg-4 mb-4">
-                <a href="" class="btn btn-arrow">Keep Searching</a>
+                <a href="<?php the_permalink( $page->ID ); ?>" class="btn btn-arrow"><span>Keep Searching</span></a>
             </div>
         </div>
     </div>

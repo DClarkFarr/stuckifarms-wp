@@ -523,7 +523,7 @@ footer .list-inline li a {
 	height: 3px;
 }
 .bottom-bar-blue:after {
-	background: #09B9E5;
+	background: #541B00;
 }
 
 .big-text {
@@ -610,7 +610,11 @@ footer .list-inline li a {
 	border-bottom: 20px solid transparent;
 	transition: all linear 0.15s;
 }
-
+.btn-arrow span {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
 
 
 @media(max-width: 1200px){

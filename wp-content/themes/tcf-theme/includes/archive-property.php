@@ -1,7 +1,5 @@
 <section class="section">
     <div class="container">
-        <h2 class="heading-alt"><?php echo get_field('page_subheading', $page->ID) ?: 'Find the perfect home'; ?></h2>
-
         <?php 
         $category = get_field('page_category', $page->ID);
         $posts_per_page = 6;
@@ -24,11 +22,12 @@
         ]);
 
         if ( $the_query->have_posts() ) {
+            echo "<h2 class='heading-alt'>". (get_field('page_subheading', $page->ID) ?: 'Find the perfect home') . "</h2>";
             echo "<div class='card-deck columns-3'>";
             while ( $the_query->have_posts() ) {
                 $the_query->the_post();
                 
-                load_include('property-thumb', ['property' => $post]);
+                load_include('property-thumb', ['property' => $post, 'page' => $page]);
             }
             echo "</div>";
 
@@ -36,7 +35,7 @@
                tcf_page_navi($the_query);
             }
         }else{
-            echo "<div class='alert alert-danger'>No Posts Found</div>";
+            load_include('coming-soon');
         }
         wp_reset_postdata();
         ?>
