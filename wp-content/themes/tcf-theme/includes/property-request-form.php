@@ -30,4 +30,4 @@
         <?php echo do_shortcode('[contact-form-7 id="106" form_source="'. $origin .'"]'); ?>
 
     </div>
-</div>
+</section>

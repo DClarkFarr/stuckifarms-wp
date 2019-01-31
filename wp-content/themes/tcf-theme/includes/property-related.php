@@ -48,4 +48,4 @@ if ( empty($posts) ) {
         ?>
 
     </div>
-</div>
+</section>
