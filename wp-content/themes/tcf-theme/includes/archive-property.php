@@ -9,6 +9,8 @@
             'post_type' => 'property',
             'posts_per_page' => $posts_per_page, 
             'paged' => get_query_var('paged'),
+            'orderby' => 'menu_order', 
+            'order' => 'ASC', 
             'tax_query' => array(                     //(array) - use taxonomy parameters (available with Version 3.1).
                 'relation' => 'AND',                      //(string) - Possible values are 'AND' or 'OR' and is the equivalent of running a JOIN for each taxonomy
                 array(

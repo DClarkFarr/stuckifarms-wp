@@ -41,17 +41,21 @@
 							<div class="d-flex pb-4">
 								<i class="far fa-map-marker f-14 fa-fw mr-4"></i>
 								<span>
-									57 Leonard Igorevich St, New York<br>
-									NY 10013, USA
+									<?php the_field('address_1', 'option'); ?>
+									<?php the_field('address_2', 'option'); ?>
+									<br> 
+									<?php the_field('city', 'option'); ?>,
+									<?php the_field('state', 'option'); ?>
+									<?php the_field('zip', 'option'); ?>
 								</span>
 							</div>
 							<div class="d-flex pb-4">
 								<i class="far fa-phone f-14 fa-fw mr-4"></i>
-								<span>+1 212-431-2100</span>
+								<span><?php the_field('phone', 'option'); ?></span>
 							</div>
 							<div class="d-flex pb-4">
 								<i class="far fa-envelope f-14 fa-fw mr-4"></i>
-								<span>realestate@info.com</span>
+								<span><?php the_field('contact_email', 'option'); ?></span>
 							</div>
 						</div>
 					</div>
@@ -61,10 +65,15 @@
 				<div class="container">
 					<div class="d-flex w-100 align-items-center">
 						<div class="mr-4">
-							All Rights Reserved 2018 Stucki Farms Inc.
-						</div>
-						<div class="mr-4">
-							Designed and developed by <a href='https://thecodeframe.com' target="_blank">The Code Frame</a>
+							<span class="d-inline-block">
+								All Rights Reserved 2018 Stucki Farms Inc.
+							</span>
+							<span class="d-inline-block px-3">
+								|
+							</span>
+							<span class="d-inline-block">
+								Designed and developed by <a href='https://thecodeframe.com' target="_blank">The Code Frame</a>
+							</span>
 						</div>
 						<div class="ml-auto">
 							<?php 
