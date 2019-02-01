@@ -497,4 +497,10 @@ function propertyPagesBySlug($slug){
         'sort_order' => 'ASC',
     ]);
 }
-/* DON'T DELETE THIS CLOSING TAG */ ?>
+
+function coming_soon_shortcode($attrs){
+    ob_start();
+    load_include('coming-soon');
+    return ob_get_clean();
+}
+add_shortcode('coming_soon', 'coming_soon_shortcode');
