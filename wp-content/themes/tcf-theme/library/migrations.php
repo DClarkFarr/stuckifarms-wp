@@ -128,6 +128,12 @@ $otherPages = [
         'post_name' => 'work-here',
         'post_content' => '[coming_soon]',
     ],
+    [
+        'post_title' => 'Parade of Homes',
+        'post_name' => 'parade-of-homes',
+        'post_content' => '[coming_soon]',
+        'post_type' => 'post',
+    ]
 ];
 
 

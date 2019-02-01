@@ -20,7 +20,7 @@
 									<a href="<?php echo site_url(); ?>/vacation-rentals/">Vacation Rentals</a>
 								</li>
 								<li>
-									<a href="<?php echo site_url(); ?>">Parade of Homes</a>
+									<a href="<?php echo home_url('news'); ?>/parade-of-homes/">Parade of Homes</a>
 								</li>
 								<li>
 									<a href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/">Mortgage Calculator</a>
