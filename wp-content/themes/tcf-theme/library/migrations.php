@@ -123,6 +123,11 @@ $otherPages = [
         'post_title' => 'Property Search',
         'post_name' => 'property-search',
     ],
+    [
+        'post_title' => 'Work Here',
+        'post_name' => 'work-here',
+        'post_content' => '[coming_soon]',
+    ],
 ];
 
 

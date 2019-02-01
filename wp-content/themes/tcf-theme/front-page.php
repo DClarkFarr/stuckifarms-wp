@@ -26,7 +26,7 @@
                     Come visit us and see why Stucki Farms is<br>
                     "A Great Place To Come Home To!"
                 </h4>
-                <a class="btn btn-lg btn-square btn-theme-alt mt-5">
+                <a class="btn btn-lg btn-square btn-theme-alt mt-5" href="<?php echo site_url(); ?>/about/">
                     Learn More
                 </a>
             </div>
@@ -52,40 +52,50 @@
             <div class="col-lg-8">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="icon-block pr-5 pb-lg-3 mb-5">
-                            <i class="mb-4 far fa-house-flood"></i>
-                            <span class="text-dark font-weight-bold">Buy a house here</span>
-                            <p class="text-lighter">
-                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
-                            </p>
+                        <div class="icon-block pr-4 pb-lg-3 mb-4">
+                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-cottage/" class="btn-mask">
+                                <i class="mb-4 far fa-house-flood"></i>
+                                <span class="text-dark font-weight-bold">Buy a house here</span>
+                                <span class="text-lighter mb-1 d-inline=-block">
+                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="icon-block pr-5 pb-lg-3 mb-5">
-                            <i class="mb-4 far fa-plane"></i>
-                            <span class="text-dark font-weight-bold">Spend Vacation here</span>
-                            <p class="text-lighter">
-                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
-                            </p>
+                        <div class="icon-block pr-4 pb-lg-3 mb-4">
+                            <a class="btn-mask" href="<?php echo site_url(); ?>/vacation-rentals/">
+                                <i class="mb-4 far fa-plane"></i>
+                                <span class="text-dark font-weight-bold">Spend Vacation here</span>
+                                <span class="text-lighter mb-1 d-inline=-block">
+                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="w-100"></div>
                     <div class="col-lg-6">
-                        <div class="icon-block pr-5 mb-5 mb-lg-0">
-                            <i class="mb-4 far fa-hand-holding-usd"></i>
-                            <span class="text-dark font-weight-bold">Invest here</span>
-                            <p class="text-lighter">
-                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
-                            </p>
+                        <div class="icon-block pr-4 mb-4 mb-lg-0">
+                            <a href="<?php echo site_url(); ?>/invest-here/" class="btn-mask">
+                                <i class="mb-4 far fa-hand-holding-usd"></i>
+                                <span class="text-dark font-weight-bold">Invest here</span>
+                                <span class="text-lighter mb-1 d-inline=-block">
+                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                </span>
+                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="icon-block pr-5 mb-5 mb-lg-0">
-                            <i class="mb-4 far fa-truck"></i>
-                            <span class="text-dark font-weight-bold">Build Here</span>
-                            <p class="text-lighter">
-                                Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
-                            </p>
+                        <div class="icon-block pr-4 mb-4 mb-lg-0">
+                            <a href="<?php echo site_url(); ?>/invest-here/build-here/" class="btn-mask">
+                                <i class="mb-4 far fa-truck"></i>
+                                <span class="text-dark font-weight-bold">Build Here</span>
+                                <span class="text-lighter mb-1 d-inline=-block">
+                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                </span>
+                            </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -146,17 +156,17 @@
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-4-2-cir.jpg" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Cottages</h3>
-                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2">Book Now</a></div>
+                        <div class="text-center"><a href="<?php echo site_url(); ?>/vacation-rentals/" class="btn btn-theme btn-book-green m-btn-book-2">Book Now</a></div>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2-cir2.jpg" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Cottage Courts</h3>
-                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2">Buy Now</a></div>
+                        <div class="text-center"><a href="<?php echo site_url(); ?>/invest-here/buy-a-cottage/" class="btn btn-theme btn-book-green m-btn-book-2">Buy Now</a></div>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cir3.png" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Villas</h3>
-                        <div class="text-center"><a href="" class="btn btn-theme btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></div>
+                        <div class="text-center"><a href="<?php echo site_url(); ?>/invest-here/" class="btn btn-theme btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></div>
                     </div>
                     
                 </div>

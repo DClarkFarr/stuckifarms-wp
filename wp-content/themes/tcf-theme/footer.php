@@ -11,29 +11,29 @@
 							</p>
 						</div>
 						<div class="col-lg-2">
-							<h4>Cool Title</h4>
+							<h4>Live Here</h4>
 							<ul class="list-unstyled">
 								<li>
-									<a href="">Available Homes</a>
+									<a href="<?php echo site_url(); ?>/live-here/">Available Homes</a>
 								</li>
 								<li>
-									<a href="">Vacation Rentals</a>
+									<a href="<?php echo site_url(); ?>/vacation-rentals/">Vacation Rentals</a>
 								</li>
 								<li>
-									<a href="">Parade of Homes</a>
+									<a href="<?php echo site_url(); ?>">Parade of Homes</a>
 								</li>
 								<li>
-									<a href="">Builders</a>
+									<a href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/">Mortgage Calculator</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-2">
-							<h4>Cool Title</h4>
+							<h4>Opportunities</h4>
 							<ul class="list-unstyled">
-								<li><a href="">Work Here</a></li>
-								<li><a href="">Invest Here</a></li>
-								<li><a href="">Schedule a tour</a></li>
-								<li><a href="">Interactive Map</a></li>
+								<li><a href="<?php echo site_url(); ?>/work-here/">Work Here</a></li>
+								<li><a href="<?php echo site_url(); ?>/invest-here/">Invest Here</a></li>
+								<li><a href="<?php echo site_url(); ?>/invest-here/build-here/">Build Here</a></li>
+								<li><a href="<?php echo site_url(); ?>/news/">News</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-4 get-in-touch">
