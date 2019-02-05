@@ -3,7 +3,7 @@ $property_type = get_field('property_type', $property->ID) ?: 'movein';
 $gallery = get_field('gallery', $property->ID);
 
 ?>
-<?php if( $property_type == 'movein' && !empty($gallery) && count($gallery) ){ ?>
+<?php if( !empty($gallery) && count($gallery) ){ ?>
 <div class="container">
     <div class="slider">
         <ul id="property-slider">

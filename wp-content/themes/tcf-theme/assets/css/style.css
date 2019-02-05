@@ -88,6 +88,12 @@ Site Theme
 .text-dark {
     color: #01040C;
 }
+.text-darker {
+    color: #01040C;
+}
+.text-bold {
+    font-weight: bold;
+}
 .text-lighter {
     color: #A6A6A6;
 }

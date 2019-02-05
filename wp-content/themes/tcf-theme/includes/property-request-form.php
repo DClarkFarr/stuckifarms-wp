@@ -7,6 +7,10 @@
         'schedule' => 'Schedule Private Showing',
         'agent' => 'Ask an Agent'
     ];
+    $property_name = '';
+    if(!empty($property)){
+        $property_name = $property->post_title;
+    }
 ?>
 <section class="section section">
     <div class="container">
@@ -27,7 +31,7 @@
             </div>
         </div>
         
-        <?php echo do_shortcode('[contact-form-7 id="106" form_source="'. $origin .'"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="106" form_source="'. $origsin .'" property="'. $property_name .'"]'); ?>
 
     </div>
 </section>

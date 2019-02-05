@@ -14,5 +14,13 @@ echo "<div class='section'>";
 
      echo "</div>";
 
+
+    if( !empty(get_field('gallery', $property->ID)) ){
+        echo "<div class='container mt-5'>";
+            echo "<h2>Property Images</h2>";
+        echo "</div>";
+        load_include('property-slider', ['property' => $property]);
+    }
+
 echo "</div>";
 

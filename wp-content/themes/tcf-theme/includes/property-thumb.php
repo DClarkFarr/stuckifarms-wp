@@ -2,20 +2,12 @@
 $property_type = get_field('property_type', $property->ID) ?: 'movein';
 
 $fields = [
-    'movein' => [
-        'plan', 'village', 'size', 'beds', 'baths', 'garages',
-    ],
-    'plan' => [
-        'village', 'size', 'lot_size',
-    ],
-    'lot' => [
-        'village', 'size', 'lot_size',
-    ],
+    'plan', 'village', 'size', 'beds', 'baths', 'garages',
 ];
 
 $fields = array_map(function($field) use ($property){
     return get_field_object($field, $property->ID);
-}, $fields[$property_type]);
+}, $fields);
 
 $fields = array_filter($fields, function($field){
     return isset($field['value']) && strlen($field['value']) > 0;

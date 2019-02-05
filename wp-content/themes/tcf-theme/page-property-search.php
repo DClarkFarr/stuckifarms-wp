@@ -47,49 +47,183 @@ if (have_posts()){
 			'relation'	=> 'AND',			
 		);
 
-		$getParams = ['price' => 'price', 'bedrooms' => 'beds', 'bathrooms' => 'baths'];
+		$minMaxParams = ['price', 'beds', 'baths'];
 
-		foreach($getParams as $get_key => $acf_key){
-			if(empty($_GET[$get_key])){
-				continue;
-			}
-			$value = $_GET[$get_key];
+		foreach($minMaxParams as $get_key){
+			$min = $get_key . '_min';
+			$max = $get_key . '_max';
 
-			if(strpos($value, '-') !== false){
-				list($min, $max) = explode('-', $value);
-				if($min){
-					$meta_args[] = array(
-						'key'	  	=>  $acf_key,
-						'value'	  	=> $min,
-						'compare' 	=> '>=',
-					);
-				}
-				if($max){
-					$meta_args[] = array(
-						'key'	  	=>  $acf_key,
-						'value'	  	=> $max,
-						'compare' 	=> '<=',
-					);
-				}
-			}else{
+			if( isset($_GET[$min]) ){
 				$meta_args[] = array(
-					'key'	  	=>  $acf_key,
-					'value'	  	=> $value,
-					'compare' 	=> '=',
+					'key'	  	=>  $get_key,
+					'value'	  	=> $_GET[$min],
+					'compare' 	=> '>=',
 				);
 			}
-			
-			
+			if( isset($_GET[$max]) ){
+				$meta_args[] = array(
+					'key'	  	=>  $get_key,
+					'value'	  	=> $_GET[$max],
+					'compare' 	=> '<=',
+				);
+			}			
 		}
 
-		$the_query = new WP_Query([
+		$boolParams = ['has_rvgarage', 'has_casita'];
+		
+		foreach($boolParams as $get_key){
+			if(isset($_GET['feature']) && in_array($get_key, $_GET['feature'])){
+				$meta_args[] = array(
+					'key'	  	=>  $get_key,
+					'value'	  	=> 1,
+					'compare' 	=> '==',
+				);
+			}
+		}
+
+
+		$valueParams = ['number_of_floors'];
+		foreach($valueParams as $get_key){
+			if(isset($_GET[$get_key])){
+				$meta_args[] = array(
+					'key'	  	=>  $get_key,
+					'value'	  	=> $_GET[$get_key],
+					'compare' 	=> '==',
+				);
+			}
+		}
+		$args = [
 			'post_type' => 'property',
 			'posts_per_page' => $posts_per_page, 
 			'paged' => get_query_var('paged'),
 			'meta_query' => $meta_args,
-		]);
+		];
+		if( isset($_GET['category']) ){
+			$args['tax_query'] = array(
+				'relation' => 'AND',
+				array(
+					'taxonomy' => 'property_cat',
+					'field' => 'id',
+					'terms' => $_GET['category'],
+					'operator' => 'IN'
+				)
+			);
+		}
+
+		$the_query = new WP_Query($args);
 
 		?>
+		<section class="section">
+			<div class="container">
+				<form action="" method="GET">
+					<div class="row justify-content-center">
+						<div class="col-lg-8"><h2>Property Search Form</h2></div>
+						<div class="w-100"></div>
+						<div class="col-lg-4">
+							<div class="form-group">
+								<label class="mb-0 text-bold">Property Type</label>
+								<div class="pl-3">
+									<?php 
+									$terms = get_terms(array(
+										'taxonomy' => 'property_cat',
+										'hide_empty' => false,
+										'orderBy' => 'count',
+										'order' => 'DESC',
+									));
+									foreach($terms as $term){
+										?>
+										<div class="form-check">
+											<label class="form-check-label">
+												<input class="form-check-input" type="checkbox" name="category[]" value="<?php echo $term->term_id; ?>" <?php echo isset($_GET['category']) && in_array($term->term_id, $_GET['category']) ? 'checked' : ''; ?>>
+												<?php echo $term->name; ?>
+											</label>
+										</div>
+										<?php
+									}
+									?>
+								</div>
+								<label class="mb-0 text-bold">Has Feature:</label>
+								<div class="pl-3">
+									<div class="form-check">
+										<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" name="feature[]" value="has_rvgarage" <?php echo isset($_GET['feature']) && in_array('has_rvgarage', $_GET['feature']) ? 'checked' : ''; ?>>
+											RV Garage
+										</label>
+									</div>
+									<div class="form-check">
+										<label class="form-check-label">
+											<input class="form-check-input" type="checkbox" name="feature[]" value="has_casita" <?php echo isset($_GET['feature']) && in_array('has_casita', $_GET['feature']) ? 'checked' : ''; ?>>
+											Casita
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-lg-6">
+										<label class="mb-0 text-bold"># Floors</label>
+										<select name="number_of_floors" class="form-control">
+											<option value="">Any</option>
+											<option value="1" <?php echo (isset($_GET['number_of_floors']) && $_GET['number_of_floors'] == 1 ? 'selected' : ''); ?>>1 Floor</option>
+											<option value="2" <?php echo (isset($_GET['number_of_floors']) && $_GET['number_of_floors'] == 2 ? 'selected' : ''); ?>>2 Floors</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="form-group">
+								<label class="mb-0 text-bold">Price Range</label>
+								<div class="row">
+									<div class="col-lg-6">
+										<label>Min (In Thousands)</label>
+										<input type="text" class="form-control" name="price_min" value="<?php echo isset($_GET['price_min']) ? $_GET['price_min'] : ''; ?>" placeholder="Any">
+									</div>
+									<div class="col-lg-6">
+										<label>Max (In Thousands)</label>
+										<input type="text" class="form-control" name="price_max" value="<?php echo isset($_GET['price_max']) ? $_GET['price_max'] : ''; ?>" placeholder="Any">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="mb-0 text-bold">Bedrooms</label>
+								<div class="row">
+									<div class="col-lg-6">
+										<label>Min</label>
+										<input type="text" class="form-control" name="beds_min" value="<?php echo isset($_GET['beds_min']) ? $_GET['beds_min'] : ''; ?>" placeholder="Any">
+									</div>
+									<div class="col-lg-6">
+										<label>Max</label>
+										<input type="text" class="form-control" name="beds_max" value="<?php echo isset($_GET['beds_max']) ? $_GET['beds_max'] : ''; ?>" placeholder="Any">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="mb-0 text-bold">Bathrooms</label>
+								<div class="row">
+									<div class="col-lg-6">
+										<label>Min</label>
+										<input type="text" class="form-control" name="baths_min" value="<?php echo isset($_GET['baths_min']) ? $_GET['baths_min'] : ''; ?>" placeholder="Any">
+									</div>
+									<div class="col-lg-6">
+										<label>Max</label>
+										<input type="text" class="form-control" name="baths_max" value="<?php echo isset($_GET['baths_max']) ? $_GET['baths_max'] : ''; ?>" placeholder="Any">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-100"></div>
+						<div class="col-lg-8">
+							<hr>
+							<div class="form-group text-right">
+								<button class="btn btn-theme">Search Properties</button>
+							</div>
+						</div>
+					</div> <!-- end main row -->
+					<input type="hidden" name="new_search" value="1">
+ 				</form>
+			</div>
+		</section>
 		<section class="section">
 			<div class="container">
 				<h2>Here's What we found:</h2>

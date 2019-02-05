@@ -338,12 +338,16 @@ function tcf_comments($comments, $args, $depth ) {
 add_filter( 'shortcode_atts_wpcf7', 'custom_shortcode_atts_wpcf7_filter', 10, 3 );
  
 function custom_shortcode_atts_wpcf7_filter( $out, $pairs, $atts ) {
-    $my_attr = 'form_source';
- 
-    if ( isset( $atts[$my_attr] ) ) {
-        $out[$my_attr] = $atts[$my_attr];
+   $attrs = [
+       'form_source',
+       'property',
+   ];
+    
+    foreach($attrs as $attr){
+        if ( isset( $atts[$attr] ) ) {
+            $out[$attr] = $atts[$attr];
+        }
     }
- 
     return $out;
 }
 
@@ -427,7 +431,7 @@ function create_page($post){
 
 function get_price_text($str){
     if(is_numeric(str_replace(',', '', $str))){
-        return '$' . number_format( floatval($str) ?: 0, 2, '.', ',');
+        return '$' . number_format( floatval($str) ?: 0, 0, '', ',');
     }
     return $str;
 }

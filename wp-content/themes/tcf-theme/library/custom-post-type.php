@@ -574,9 +574,81 @@ function property_cpt() {
 							'value' => 'movein',
 						),
 					),
+					array(
+						array(
+							'field' => 'field_5c36c8eb40c4c',
+							'operator' => '==',
+							'value' => 'plan',
+						)
+					)
 				),
 			),
 			
+			array(
+				'key' => 'field_5c58c9c741fbf',
+				'label' => 'Has RV Garage',
+				'name' => 'has_rvgarage',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_5c58c9e841fc0',
+				'label' => 'Has Casita',
+				'name' => 'has_casita',
+				'type' => 'true_false',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'message' => '',
+				'default_value' => 0,
+				'ui' => 0,
+				'ui_on_text' => '',
+				'ui_off_text' => '',
+			),
+			array(
+				'key' => 'field_5c58ca0f41fc1',
+				'label' => 'Number of Floors',
+				'name' => 'number_of_floors',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					1 => 'One Floor',
+					2 => 'Two Floors',
+				),
+				'default_value' => array(
+					0 => 1,
+				),
+				'allow_null' => 0,
+				'multiple' => 0,
+				'ui' => 0,
+				'return_format' => 'value',
+				'ajax' => 0,
+				'placeholder' => '',
+			),
 			/*
 			array(
 				'key' => 'field_5c35888931442',
