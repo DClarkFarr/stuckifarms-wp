@@ -1,16 +1,9 @@
-<?php 
-
-while(have_posts()){
-	the_post();
-
-	page_title_block(get_the_title()); 
- 
- ?>
-
 <section class="section">
 	<div class="container">
-        <div class="big-text">
-            <?php the_content(); ?>
+		<h1 class="text-darker"><?php echo get_the_title($post->ID); ?></h1>
+		<hr>
+        <div class="big-text mb-5">
+            <?php the_content($post->ID); ?>
         </div>
 	</div>
 	<div class="container">
@@ -41,8 +34,3 @@ while(have_posts()){
 		</ul>
 	</div>
 </section>
-
-
-<?php 
-}
-?>
