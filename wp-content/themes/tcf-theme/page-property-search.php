@@ -19,7 +19,7 @@
 
 if(!empty($_GET['new_search'])){
 	$get = array_filter($_GET);
-	if(empty($get['category'])){
+	if(empty($get['category']) || empty(array_filter($get['category'])) ){
 		unset($get['category']);
 	}
 	unset($get['new_search']);
