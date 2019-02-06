@@ -4,11 +4,17 @@
     <div class="col-md-4">
         <dl class="row">
          
-          <?php foreach($fields as $field){ ?>
+            <?php foreach($fields as $field){ ?>
                 <dt class="col-4 text-right"><?php echo $field['label']; ?></dt>
                 <dd class="col-8"><?php echo $field['value']; ?></dd>
             <?php } ?>
-
+            <?php if( !empty( ($builder_id = get_field('builder_id', $property->ID)) ) ){ ?>
+                <?php 
+                $builder = get_post($builder_id); 
+                ?>
+                <dt class="col-4 text-right">Builder</dt>
+                <dd class="col-8"><?php echo $builder->post_title; ?></dd>
+            <?php } ?>
         </dl>
     </div>
     <div class="col-md-8">
