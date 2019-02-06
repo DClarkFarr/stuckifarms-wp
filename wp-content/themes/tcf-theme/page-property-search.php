@@ -56,17 +56,23 @@ if (have_posts()){
 			$min = $get_key . '_min';
 			$max = $get_key . '_max';
 
+			$min_value = $_GET[$min];
+			$max_value = $_GET[$max];
+			if($get_key == 'price'){
+				$min_value = floor($min_value * 1000);
+				$max_value = ceil($max_value * 1000);
+			}
 			if( isset($_GET[$min]) ){
 				$meta_args[] = array(
 					'key'	  	=>  $get_key,
-					'value'	  	=> $_GET[$min],
+					'value'	  	=> $min_value,
 					'compare' 	=> '>=',
 				);
 			}
 			if( isset($_GET[$max]) ){
 				$meta_args[] = array(
 					'key'	  	=>  $get_key,
-					'value'	  	=> $_GET[$max],
+					'value'	  	=> $max_value,
 					'compare' 	=> '<=',
 				);
 			}			
