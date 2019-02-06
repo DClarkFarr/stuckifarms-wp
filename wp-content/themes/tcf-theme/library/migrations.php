@@ -133,7 +133,7 @@ $otherPages = [
         'post_name' => 'parade-of-homes',
         'post_content' => '[coming_soon]',
         'post_type' => 'post',
-    ]
+    ],
 ];
 
 
