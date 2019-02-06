@@ -143,7 +143,7 @@
 </section> -->
         
 
-<section class="section parallax" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2.jpg);">
+<section class="section parallax" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/assets/img/home-cottages-bg.jpg);">
     
     <div class="container">
         
