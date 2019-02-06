@@ -42,11 +42,13 @@
 
             $columnClass = !empty($twoColumns) ? 'col-lg-6' : 'col-lg-4';
             ?>
-            <div class="<?php echo $columnClass; ?> mb-4">
-                <?php if($download){ ?>
+            
+            <?php if($download){ ?>
+                <div class="<?php echo $columnClass; ?> mb-4">
                     <a href="<?php echo $download; ?>" class="btn btn-arrow"><span>Download Plan</span></a>
-                <?php } ?>
-            </div>
+                </div>
+            <?php } ?>
+           
             <div class="<?php echo $columnClass; ?> mb-4">
                 <a href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/" class="btn btn-arrow"><span>Calculate Mortgage</span></a>
             </div>
