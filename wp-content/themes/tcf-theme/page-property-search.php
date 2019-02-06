@@ -19,6 +19,9 @@
 
 if(!empty($_GET['new_search'])){
 	$get = array_filter($_GET);
+	if(empty($get['category'])){
+		unset($get['category']);
+	}
 	unset($get['new_search']);
 	header('Location: ?' . http_build_query($get));
 	die();
@@ -82,7 +85,7 @@ if (have_posts()){
 		}
 
 
-		$valueParams = ['number_of_floors'];
+		$valueParams = ['number_of_floors', 'builder_id'];
 		foreach($valueParams as $get_key){
 			if(isset($_GET[$get_key])){
 				$meta_args[] = array(
@@ -166,6 +169,27 @@ if (have_posts()){
 											<option value="">Any</option>
 											<option value="1" <?php echo (isset($_GET['number_of_floors']) && $_GET['number_of_floors'] == 1 ? 'selected' : ''); ?>>1 Floor</option>
 											<option value="2" <?php echo (isset($_GET['number_of_floors']) && $_GET['number_of_floors'] == 2 ? 'selected' : ''); ?>>2 Floors</option>
+										</select>
+									</div>
+									<div class="col-lg-6">
+										<label class="mb-0 text-bold">Builder</label>
+										<select name="builder_id" class="form-control">
+											<option value="">Any</option>
+											<?php 
+											$builders = new WP_Query([
+												'post_type' => 'builder',
+												'limit' => -1,
+												'orderBy' => 'title',
+												'order' => 'ASC',
+												'limit' => -1,
+											]);
+											while($builders->have_posts()){
+												$builders->the_post();
+												echo "<option value='". get_the_ID() ."' ". (!empty($_GET['builder_id']) && $_GET['builder_id'] == get_the_ID() ? 'selected' : '') .">". get_the_title() ."</option>";
+											}
+
+											wp_reset_postdata();
+											?>
 										</select>
 									</div>
 								</div>
