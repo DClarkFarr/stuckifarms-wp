@@ -8,7 +8,7 @@ echo "<div class='section'>";
             echo "</div>";
             echo "<div class='col-lg-8'>";
                 echo "<h1 class='heading-alt'>". get_the_title($property->ID) ."</h1>";
-                load_include('property-info', ['property' => $property, 'fields' => $fields, 'property_type' => $property_type, 'page' => $page]);
+                load_include('property-info', ['property' => $property, 'fields' => $fields, 'property_type' => $property_type, 'page' => $page, 'twoColumns' => true]);
             echo "</div>";
         echo "</div>";
 

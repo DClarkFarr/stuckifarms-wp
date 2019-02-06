@@ -4,7 +4,7 @@
         <?php 
         foreach($pages as $page){
             echo "<div>";
-                echo "<a class='". ($page->ID == $active->ID ? 'active' : '') ." link-white' href='". get_permalink($page->ID) ."'>";
+                echo "<a class='". (!empty($active) && $page->ID == $active->ID ? 'active' : '') ." link-white' href='". get_permalink($page->ID) ."'>";
                     echo get_the_title($page->ID);
                 echo "</a>";
             echo "</div>";

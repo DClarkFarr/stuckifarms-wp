@@ -31,7 +31,7 @@
             </div>
         </div>
         
-        <?php echo do_shortcode('[contact-form-7 id="106" form_source="'. $origsin .'" property="'. $property_name .'"]'); ?>
+        <?php echo do_shortcode('[contact-form-7 id="106" form_source="'. $origin .'" property="'. $property_name .'"]'); ?>
 
     </div>
 </section>
