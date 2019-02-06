@@ -1,6 +1,6 @@
 <?php 
 
-page_title_block('Buyer Tools');
+page_title_block($parent->post_title);
 
 load_include('buyer-tools-breadcrumbs', ['page' => $post]);
 

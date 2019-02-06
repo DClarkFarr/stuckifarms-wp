@@ -20,7 +20,7 @@ if (have_posts()){
 		$parent = get_post($post->post_parent);
 		$parent_slug = $parent->post_name;
 
-        load_include('subpage-' . $parent_slug, ['post' => $post]);
+        load_include('subpage-' . $parent_slug, ['post' => $post, 'parent' => $parent]);
 
     }
 }
