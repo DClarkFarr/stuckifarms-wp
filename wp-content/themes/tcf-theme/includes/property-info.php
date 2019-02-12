@@ -17,15 +17,20 @@
             <?php } ?>
 
             <?php 
-            $boolColumns = [
-                'has_rvgarage' => 'RV Garage',
-                'has_casita' => 'Casita',
-            ];
-            foreach($boolColumns as $column => $label){
-            ?>
-                <dt class="col-4 pr-3 text-right"><?php echo $label; ?></dt>
-                <dd class="col-8"><?php echo ( get_field($column, $property->ID) ? 'Yes' : 'No' ); ?></dd>
-            <?php
+
+            if($property_type == 'lot'){
+
+            }else{
+                 $boolColumns = [
+                    'has_rvgarage' => 'RV Garage',
+                    'has_casita' => 'Casita',
+                ];
+                foreach($boolColumns as $column => $label){
+                ?>
+                    <dt class="col-4 pr-3 text-right"><?php echo $label; ?></dt>
+                    <dd class="col-8"><?php echo ( get_field($column, $property->ID) ? 'Yes' : 'No' ); ?></dd>
+                <?php
+                }
             }
             ?>
         </dl>

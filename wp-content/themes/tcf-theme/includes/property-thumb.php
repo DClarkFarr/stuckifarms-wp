@@ -2,7 +2,7 @@
 $property_type = get_field('property_type', $property->ID) ?: 'movein';
 
 $fields = [
-    'plan', 'village', 'size', 'beds', 'baths', 'garages',
+    'plan', 'village', 'size', 'lot_size', 'beds', 'baths', 'garages',
 ];
 
 $fields = array_map(function($field) use ($property){
