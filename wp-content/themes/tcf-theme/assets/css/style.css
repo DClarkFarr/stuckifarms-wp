@@ -566,7 +566,7 @@ footer .list-inline li a {
 }
 
 .custom-home-p{
-    font-size: 28px;
+    font-size: 23px;
     color: #707070;
 }
 
@@ -662,7 +662,7 @@ footer .list-inline li a {
         font-size: 12px;
     }
     .custom-home-p {
-		font-size: 22px;
+		font-size: 18px;
 		color: #707070;
     }
     
@@ -680,10 +680,6 @@ footer .list-inline li a {
 		display: inline-block;
 		margin-bottom: 15px;
         font-size: 12px;
-    }
-    .custom-home-p {
-		font-size: 22px;
-		color: #707070;
     }
     .page-heading {
     	font-size: 28px;
@@ -758,11 +754,6 @@ footer .list-inline li a {
 
 .mgrb-40 {
     margin-bottom: 40px;
-}
-
-.custom-home-p {
-    font-size: 28px;
-    color: #707070;
 }
 
 .mgrr-10 {
@@ -1181,10 +1172,6 @@ footer .list-inline li a {
         margin-bottom: 15px;
         font-size: 12px;
     }
-    .custom-home-p {
-        font-size: 22px;
-        color: #707070;
-    }
 }
 
 @media(max-width: 767px) {
@@ -1230,10 +1217,7 @@ footer .list-inline li a {
         margin-bottom: 15px;
         font-size: 12px;
     }
-    .custom-home-p {
-        font-size: 22px;
-        color: #707070;
-    }
+
     .page-heading {
         font-size: 28px;
     }

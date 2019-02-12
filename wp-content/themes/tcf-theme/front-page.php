@@ -57,7 +57,7 @@
                                 <i class="mb-4 far fa-house-flood"></i>
                                 <span class="text-dark font-weight-bold">Buy a house here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
-                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                    Come look at our current models and custom-built spec homes. 
                                 </span>
                             </a>
                         </div>
@@ -68,7 +68,7 @@
                                 <i class="mb-4 far fa-plane"></i>
                                 <span class="text-dark font-weight-bold">Spend Vacation here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
-                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                    Relax and enjoy beautiful Southern Utah in one of its newest resorts
                                 </span>
                             </a>
                         </div>
@@ -77,10 +77,10 @@
                     <div class="col-lg-6">
                         <div class="icon-block pr-4 mb-4 mb-lg-0">
                             <a href="<?php echo site_url(); ?>/invest-here/" class="btn-mask">
-                                <i class="mb-4 far fa-hand-holding-usd"></i>
-                                <span class="text-dark font-weight-bold">Invest here</span>
+                                <i class="mb-4 far fa-hotel"></i>
+                                <span class="text-dark font-weight-bold">The Villa at the Cottage</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
-                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                    The Villa sits 50 feet from the resort pool and lazy river.
                                 </span>
                             </a>
                             
@@ -92,7 +92,7 @@
                                 <i class="mb-4 far fa-truck"></i>
                                 <span class="text-dark font-weight-bold">Build Here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
-                                    Phasellus tincidunt augue id nulla bibendum, non efficitur ante placerat. Donec tortor eros, congue sit amet. 
+                                    Bring your plan and your builder and Build it your way.
                                 </span>
                             </a>
                             

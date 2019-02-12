@@ -42,7 +42,7 @@ if (have_posts()){
                    </div>
                    <div class="col-md-6">
                        <p class="custom-home-p m-mgrt-20">
-                           At Stucki Farms you can choose the plan you want, either is an existing one we have or have our designers to create your especial plan. We have a wide variety of plans for you to choose, houses of all sizes and shapes. You can always bring your own perfect plan or the imperfect one for us to perfect it for you, no matter how, we will get you the home that you have been dreaming about.
+                           Stucki Farms is a custom build development, we allow and encourage homes to be built differently while following the guild lines of each village.   We have a wide variety of floor plans to choose from (and all can be modified).  We will also allow you to bring your own plans.  All plans do get reviewed by a site committee to ensure the overall feel of the homes matches the village.    If you like Craftsman style homes, then the Homesteads is for you.  If you want a more modern or southern style home then the Crossroads will be a great landing spot.
 
                        </p>
                    </div>
