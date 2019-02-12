@@ -52,10 +52,10 @@
                         <label class="text-white">Bathrooms</label>
                         <select name="bathrooms" class="form-control">
                             <option value="">Any</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
                         </select>
                     </div>
                 </div>
