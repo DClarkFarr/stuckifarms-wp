@@ -52,16 +52,16 @@ if (have_posts()){
                     <div class="col-md-5">
                         <div class="row">
                             <div class="col-md-6 m-mgrt-30 mgrb-20">
-                                <a href="" class="btn btn-arrow">LOTS AVAILABLE</a>
+                                <a href="<?php echo home_url(); ?>/live-here/lots-for-sale/" class="btn btn-arrow">LOTS AVAILABLE</a>
                             </div>
                             <div class="col-md-6 mgrb-20">
-                                <a href="" class="btn btn-arrow">SCHEDULE A VISIT</a>
+                                <a href="<?php echo home_url(); ?>/contact/" class="btn btn-arrow">SCHEDULE A VISIT</a>
                             </div>
                             <div class="col-md-6 mgrb-20">
-                                <a href="" class="btn btn-arrow">TALK TO AN AGENT</a>
+                                <a href="<?php echo home_url(); ?>/contact/" class="btn btn-arrow">TALK TO AN AGENT</a>
                             </div>
                             <div class="col-md-6 mgrb-20">
-                                <a href="" class="btn btn-arrow">STUCKI FARMS MAP</a>
+                                <a target="_blank" href="<?php echo get_field('map_pdf', 'option'); ?>" class="btn btn-arrow">STUCKI FARMS MAP</a>
                             </div>
                             
                         </div>
