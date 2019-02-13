@@ -24,10 +24,13 @@ if(have_posts()){
 			'property' => $post,
 		]);
 
-		load_include('breadcrumbs-pages', [
-			'active' => $info['active'],
-			'pages' => $info['pages'],
-		]);
+		if(!empty($info['pages'])){
+			load_include('breadcrumbs-pages', [
+				'active' => $info['active'],
+				'pages' => $info['pages'],
+			]);
+		}
+		
 
 		load_include('property-single', ['property'=> $post, 'page' => $info['active']]);
 	}

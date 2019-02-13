@@ -451,7 +451,11 @@ function propertyPageInfo($options = []){
     $parent = !empty($options['page']->post_parent) ? get_page($options['page']->post_parent) : $options['page'];
 
     $options['slug'] = !empty($options['slug']) ? $options['slug'] : $parent->post_name;
-    $pages = propertyPagesBySlug($options['slug']);
+
+    $pages = [];
+    if( !empty($options['slug']) ){
+        $pages = propertyPagesBySlug($options['slug']);
+    }
 
     $activePage = $options['autoselect'] ? reset($pages) : false;
 
