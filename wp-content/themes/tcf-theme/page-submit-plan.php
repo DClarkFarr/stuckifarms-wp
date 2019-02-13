@@ -18,7 +18,7 @@
 
 <script>
 $(function(){
-    var checked = window.location.search.indexOf('builder=true') > -1;
+    var checked = window.location.search.indexOf('withBuilder=true') > -1;
 
     var input = $('.submit-builder-input').prop('checked', checked);
     var content = $('.submit-builder-content').toggleClass('hidden', !checked);

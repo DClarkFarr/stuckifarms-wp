@@ -50,7 +50,7 @@ if (have_posts()){
                
                 <div class="property-buttons mgrt-40">
                     <a href="<?php echo home_url(); ?>/submit-plan/" class="btn btn-link btn-arrow">SUBMIT A PLAN</a>
-                    <a href="<?php echo home_url(); ?>/submit-plan/?builder=true" class="btn btn-link btn-arrow">BRING A BUILDER</a>
+                    <a href="<?php echo home_url(); ?>/submit-plan/?withBuilder=true" class="btn btn-link btn-arrow">BRING A BUILDER</a>
                     <a href="<?php echo home_url(); ?>/contact/" class="btn btn-link btn-arrow">TALK TO AN AGENT</a>
                     <a href="<?php echo home_url(); ?>/live-here/lots-for-sale/" class="btn btn-link btn-arrow">BUY A LOT</a>
                     <a href="<?php echo home_url(); ?>/contact/" class="btn btn-link btn-arrow">SCHEDULE A TOUR</a>
