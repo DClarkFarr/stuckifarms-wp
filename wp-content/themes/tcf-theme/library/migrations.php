@@ -134,6 +134,10 @@ $otherPages = [
         'post_content' => '[coming_soon]',
         'post_type' => 'post',
     ],
+    [
+        'post_title' => 'Submit Plan',
+        'post_name' => 'submit-plan',
+    ],
 ];
 
 
