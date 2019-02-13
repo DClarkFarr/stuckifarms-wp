@@ -21,4 +21,10 @@ $gallery = get_field('gallery', $property->ID);
         </ul>
     </div>
 </div>
+<?php }else{ ?>
+<div class="container">
+    <div class="slider">
+        <img src="<?php echo get_the_post_thumbnail_url($property->ID, 'original'); ?>" alt="" class="img-fluid">
+    </div>
+</div>
 <?php } ?>
