@@ -53,7 +53,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="icon-block pr-4 pb-lg-3 mb-4">
-                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-cottage/" class="btn-mask">
+                            <a href="<?php echo site_url(); ?>/live-here/move-in-ready-homes/" class="btn-mask">
                                 <i class="mb-4 far fa-house-flood"></i>
                                 <span class="text-dark font-weight-bold">Buy a house here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
@@ -76,7 +76,7 @@
                     <div class="w-100"></div>
                     <div class="col-lg-6">
                         <div class="icon-block pr-4 mb-4 mb-lg-0">
-                            <a href="<?php echo site_url(); ?>/invest-here/" class="btn-mask">
+                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-villa/" class="btn-mask">
                                 <i class="mb-4 far fa-hotel"></i>
                                 <span class="text-dark font-weight-bold">The Villa at the Cottage</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
@@ -166,7 +166,7 @@
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cir3.png" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Villas</h3>
-                        <div class="text-center"><a href="<?php echo site_url(); ?>/invest-here/" class="btn btn-theme btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></div>
+                        <div class="text-center"><a href="<?php echo site_url(); ?>/vacation-here/cottages/" class="btn btn-theme btn-book-green m-btn-book-2 mgrb-no">LEARN MORE</a></div>
                     </div>
                     
                 </div>

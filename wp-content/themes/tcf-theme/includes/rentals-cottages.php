@@ -13,7 +13,9 @@
             <div class="col-md-6">
                 <div class="book-img">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-4-2.jpg" class="img-fluid" alt="">
-                    <a href="" class="btn btn-book">Book Now</a>
+                    <div class="buttons text-right">
+                        <a href="" class="btn btn-theme btn-book">Book Now</a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -26,7 +28,9 @@
         <div class="col-md-6 mob">
                 <div class="book-img">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/sc_1_2.jpg" class="img-fluid" alt="">
-                    <a href="" class="btn btn-book">Book Now</a>
+                    <div class="buttons text-right">
+                        <a href="" class="btn btn-theme btn-book">Book Now</a>
+                    </div>
                 </div>
             </div>
                 
@@ -36,7 +40,9 @@
             <div class="col-md-6 desk">
                 <div class="book-img">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/sc_1_2.jpg" class="img-fluid" alt="">
-                    <a href="" class="btn btn-book">Book Now</a>
+                    <div class="buttons text-right">
+                        <a href="" class="btn btn-theme btn-book">Book Now</a>
+                    </div>
                 </div>
             </div>
             
