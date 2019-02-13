@@ -29,7 +29,7 @@ while(have_posts()){
 			<div class="col-lg-6">
 				<h4>We're ready to help</h4>
 				<p>
-					Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. 
+					Send us a message and we'll get back to you as soon as possible.
 				</p>
 				<?php echo do_shortcode('[contact-form-7 id="105" title="Contact form 1"]'); ?>
 			</div>
