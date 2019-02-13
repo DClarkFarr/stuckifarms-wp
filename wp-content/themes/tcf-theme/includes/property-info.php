@@ -55,19 +55,19 @@
             <?php } ?>
            
             <div class="<?php echo $columnClass; ?> mb-4">
-                <a target="_blank" href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/" class="btn btn-arrow"><span>Calculate Mortgage</span></a>
+                <a href="<?php echo site_url(); ?>/buyer-tools/calculate-mortgage/" class="btn btn-arrow"><span>Calculate Mortgage</span></a>
             </div>
             <div class="<?php echo $columnClass; ?> mb-4">
-                <a target="_blank" href="<?php echo site_url(); ?>/contact/?from=talk" class="btn btn-arrow"><span>Talk to an Agent</span></a>
+                <a href="<?php echo site_url(); ?>/contact/?from=talk" class="btn btn-arrow"><span>Talk to an Agent</span></a>
             </div>
             <div class="<?php echo $columnClass; ?> mb-4">
-                <a target="_blank" href="<?php echo site_url(); ?>/contact/?from=buy" class="btn btn-arrow"><span>Buy it Now</span></a>
+                <a href="<?php echo site_url(); ?>/contact/?from=buy" class="btn btn-arrow"><span>Buy it Now</span></a>
             </div>
             <div class="<?php echo $columnClass; ?> mb-4">
-                <a target="_blank" href="<?php echo site_url(); ?>/contact/?from=schedule" class="btn btn-arrow"><span>Schedule a Visit</span></a>
+                <a href="<?php echo site_url(); ?>/contact/?from=schedule" class="btn btn-arrow"><span>Schedule a Visit</span></a>
             </div>
             <div class="<?php echo $columnClass; ?> mb-4">
-                <a target="_blank" href="<?php the_permalink( $page->ID ); ?>" class="btn btn-arrow"><span>Keep Searching</span></a>
+                <a href="<?php the_permalink( $page->ID ); ?>" class="btn btn-arrow"><span>Keep Searching</span></a>
             </div>
         </div>
     </div>
