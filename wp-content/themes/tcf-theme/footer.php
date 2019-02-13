@@ -9,6 +9,7 @@
 							<p>
 								Stucki Farms is Southern Utah’s Premier Master Planned Community!  Located in beautiful Washington City, Stucki Farms is just under 600 acres.  
 							</p>
+							<img src="<?php echo get_assets_directory(); ?>/img/logo-ipro-realty.png" alt="iPro Realty" class="img-fluid">
 						</div>
 						<div class="col-lg-2">
 							<h4>Live Here</h4>

@@ -39,9 +39,11 @@ if (have_posts()){
                 <h2 class="page-heading">The Villas at the Cottages</h2>
                 
                 <div class="book-img no-shadow">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Villa%20Rendering.jpg" class="img-fluid" alt="">
-                    <a href="" class="btn btn-book btn-theme m-btn-book mgrr-10 btn-position">Details</a>
-                     <a href="" class="btn btn-book btn-theme m-btn-book mgrr-10">Buy a Villa Now</a>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/villa-rendering.jpg" class="img-fluid" alt="">
+                    <div class="buttons text-right">
+                        <a href="<?php the_permalink( get_field('vila_property_page', 'option') ); ?>" class="btn btn-theme btn-book">Details</a>
+                        <a href="<?php echo home_url('/contact/'); ?>" class="btn btn-book btn-theme m-btn-book mgrr-10">Buy a Villa Now</a>
+                    </div>
                 </div>
                 <p class="rbto-25 text-grey-f707 mgrt-80">We will put together a detailed and specific style guide that covers. Most of our clients use our Data Analysis service to inform their strategic decision making and their targets for the immediate, mid-term and long-term future. The data sources that we use for this type of analysis include customer enquiry data, sales figures, costs, market data and customer feedback. We work with clients big and small across a range of sectors.</p>
             </div>
