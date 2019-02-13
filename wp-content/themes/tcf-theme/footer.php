@@ -31,7 +31,7 @@
 						<div class="col-lg-2">
 							<h4>Opportunities</h4>
 							<ul class="list-unstyled">
-								<li><a href="<?php echo site_url(); ?>/work-here/">Work Here</a></li>
+								<li><a href="<?php echo site_url(); ?>/contact/">Work Here</a></li>
 								<li><a href="<?php echo site_url(); ?>/vacation-here/cottages/">Cottages</a></li>
 								<li><a href="<?php echo site_url(); ?>/invest-here/villas/">Villas</a></li>
 								<li><a href="<?php echo site_url(); ?>/news/">News</a></li>
