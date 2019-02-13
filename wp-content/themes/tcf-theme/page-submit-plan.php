@@ -16,3 +16,16 @@
 
 <?php endwhile; endif; ?>
 
+<script>
+$(function(){
+    var checked = window.location.search.indexOf('builder=true');
+
+    var input = $('.submit-builder-input').prop('checked', checked);
+    var content = $('.submit-builder-content').toggleClass('hidden', !checked);
+
+    input.on('change', function(){
+        content.toggleClass('hidden',  !$(this).is(':checked'));
+    });
+});
+</script>
+
