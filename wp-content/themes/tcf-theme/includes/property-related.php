@@ -1,6 +1,9 @@
 <?php 
 
 $cats = wp_get_post_terms( $property->ID, 'property_cat' ); 
+if(empty($cats)){
+    return '';
+}
 $cat_ids = array();  
 foreach( $cats as $cat ) {
     $cat_ids[] = $cat->term_id; 
