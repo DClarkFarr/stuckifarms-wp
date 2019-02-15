@@ -18,7 +18,7 @@ if(have_posts()){
 	while(have_posts()){
 		the_post(); 
 		
-		page_title_block('Live at Stucki Farms');		
+		page_title_block( get_field('page_title') ?: 'Live at Stucki Farms' );		
 
 		$info = propertyPageInfo([
 			'property' => $post,

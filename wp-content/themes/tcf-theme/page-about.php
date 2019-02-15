@@ -22,9 +22,14 @@ while(have_posts()){
 <section class="section">
 	<div class="container">
 		
-		<div class="row">
+		<div class="row align-items-center">
 			<div class="col-lg-5 offset-lg-1 order-lg-2">
-				<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tcf-property-portrait'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
+				<div class="mx-lg-5">
+					<div class="w-50 w-lg-100 mx-auto">
+						<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tcf-property-portrait'); ?>" alt="<?php the_title(); ?>" class="img-fluid">
+
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-6">
 				<h1 class="heading-alt">

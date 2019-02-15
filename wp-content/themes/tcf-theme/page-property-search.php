@@ -140,6 +140,9 @@ if (have_posts()){
 										'order' => 'DESC',
 									));
 									foreach($terms as $term){
+										if($term->name == 'Custom Made Homes'){
+											continue;
+										}
 										?>
 										<div class="form-check">
 											<label class="form-check-label">

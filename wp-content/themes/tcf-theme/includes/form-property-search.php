@@ -15,8 +15,16 @@
                             'order' => 'DESC',
                         ));
                         foreach($terms as $term){
+                            if($term->name == 'Custom Made Homes'){
+                                continue;
+                            }
+                            $name = $term->name;;
+
+                            if($name == 'Cottages'){
+                                $name = 'Vacation Rentals';
+                            }
                             echo "<option value='". $term->term_id ."'>";
-                                echo $term->name;
+                               echo $name;
                             echo "</option>";
                         }
                         ?>

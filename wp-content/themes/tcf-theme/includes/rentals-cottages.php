@@ -47,14 +47,7 @@
             </div>
             
         </div>
-        
-        <p class="rbto-25 text-grey-f707 mgrt-30">Home sizes range from a one bedroom (529 square feet) to 3 bedrooms (1283 square feet).  The unique design offers a wide variety of options for vacation rentals, family reunions, corporate retreats, second home buyers, and single family residences.
-        <br>
-        <br>
 
-        A desirable benefit of The Cottages at The Village at Stucki Farms is the nightly rental zoning, which allows for vacation rentals.  This is a great option for second Home Owners and Investors who want to have a vacation home in Southern Utah and also provide the opportunity for others to experience Southern Utah’s serene beauty.
-        </p>
-        
     </div>
 </section>
 

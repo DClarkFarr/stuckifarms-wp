@@ -36,13 +36,21 @@ if (have_posts()){
                   
                 <div class="row">
                     <div class="col-md-6">
-                       <h2 class="page-heading">Building here nice title</h2> 
-                        <p class="rbto-25 text-grey-f707 line-h-27 mgrt-20">
-                            We will put together a detailed and specific style guide that covers. Most of our clients use our Data Analysis service to inform their strategic decision making and their targets for the immediate, mid-term and long-term future. The data sources that we use for this type of analysis include customer enquiry data, sales figures, costs, market data and customer feedback. We work with clients big and small across a range of sectors.
+                        <div class="">
+                             <h2 class="page-heading">Building here nice title</h2> 
+                            <p class="rbto-25 text-grey-f707 line-h-27 mgrt-20">
+                                                            
+                                At Stucki Farms, we want your home to be built to your style. You can choose one of our floor plans or you can design your own plan, you can use one of our preferred builders or you can bring your own preferred builder. Here, you can choose from the lot where you want to build your house, to the furniture you will use to turn your new house into your new home.
 
-                        </p>
+                                <br><br>
+                                Building and living here, you will have a 7-acre Amenity Area that is planned to be completed in 2019, featuring our Farmhouse Welcome Center, Barn Event Center and Resort Style Pool.
+
+                            </p>
+                        </div>
+                      
                     </div> 
                     <div class="col-md-6 mgrt-20">
+                        <h2 class="page-heading">&nbsp;</h2> 
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Copy%20of%20SF-03.png" alt="" class="img-fluid">
                     </div>
                 </div>
