@@ -14,7 +14,8 @@ Site Theme
 
 .text-theme,
 .btn-link.btn-link-theme,
-.nav-link.nav-link-theme
+.nav-link.nav-link-theme,
+.ldgxPropBadgeTitle
 {
 	color: #0A2E0C;
 }
@@ -1293,4 +1294,81 @@ footer .list-inline li a {
         font-size: 12px;
         padding-left: 5px;
     }
+}
+
+.ldgxPropBadge {
+    margin-bottom: 20px;
+    border: 1px solid #A6A6A6;
+    background: #FFF;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.lodgix-widget-header {
+    background: #214812;
+    border: 1px solid #214812;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.lodgix-corner-all, .lodgix-corner-bottom, .lodgix-corner-right, .lodgix-corner-br {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.lodgix-state-active a, .lodgix-state-active a:link, .lodgix-state-active a:visited {
+    color: #000;
+}
+
+.lodgix-state-default a, .lodgix-state-default a:link, .lodgix-state-default a:visited {
+    color: #214812;
+}
+
+.lodgix-state-hover:not(.lodgix-state-active), 
+.lodgix-widget-content .lodgix-state-hover:not(.lodgix-state-active), 
+.lodgix-widget-header .lodgix-state-hover:not(.lodgix-state-active), 
+.lodgix-state-focus:not(.lodgix-state-active), 
+.lodgix-widget-content .lodgix-state-focus:not(.lodgix-state-active), 
+.lodgix-widget-header .lodgix-state-focus:not(.lodgix-state-active) {
+    background: #e4f5de;
+    border: 1px solid #e4f5de;
+    color: #214812;
+    font-weight: bold;
+}
+
+.lodgix-tabs .lodgix-tabs-panel {
+    padding: 25px;
+    min-height: 300px;
+}
+
+.lodgix-tabs .lodgix-tabs-nav li {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+.lodgix-tabs .lodgix-tabs-nav li a {
+    padding: 0.75rem 2rem;
+}
+.ldgxTabbedContent .ldgxTabContent h2 {
+    font-size: 20pt;
+}
+.ldgxSliderWrapper {
+    max-width: 900px !important;
+}
+
+@media (min-width: 768px){
+    .ldgxInventoryTheme2 .ldgxListingImg {
+        width: 330px;
+    }
+    .ldgxInventoryTheme2 .ldgxListingName, .ldgxInventoryTheme2 .ldgxListingBody {
+        padding-left: 350px;
+        margin-right: 100px;
+    }
+}
+
+.ldgxInventoryTheme2 .ldgxListingBody, .ldgxInventoryTheme2 .ldgxListingFullSizeBody {
+    font-size: 1.2rem;
 }
