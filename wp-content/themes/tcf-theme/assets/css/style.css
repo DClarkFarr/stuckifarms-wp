@@ -1356,7 +1356,7 @@ footer .list-inline li a {
     font-size: 20pt;
 }
 .ldgxSliderWrapper {
-    max-width: 900px !important;
+    max-width: 1200px !important;
 }
 
 @media (min-width: 768px){
