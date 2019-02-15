@@ -1372,3 +1372,7 @@ footer .list-inline li a {
 .ldgxInventoryTheme2 .ldgxListingBody, .ldgxInventoryTheme2 .ldgxListingFullSizeBody {
     font-size: 1.2rem;
 }
+.ldgxTabbedContent .ldgxTabContentCalendar h2 {
+    margin-left: 0;
+    margin-right: 0;
+}
