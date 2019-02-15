@@ -13,13 +13,24 @@ $(function(){
     }
   }
   function onDropdownClick(e){
+    console.log('clicked');
     let _a = $(e.target),
         href = _a.attr('href');
       if(href && href.length > 1){
-        window.location.href = href;
+        if( $(window).width() < 991 ){
+          if( _a.parent().hasClass('show')){
+            window.location.href = href;
+          }
+        }else{
+          window.location.href = href;
+        }
+        
       }
   }
   function onDropdownHover (e) {
+    if( $(window).width() < 992){
+      return;
+    }
     let _d = $(e.target).closest('.dropdown'),
         _m = $('.dropdown-menu', _d);
 

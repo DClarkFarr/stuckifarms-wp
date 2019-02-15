@@ -37,7 +37,7 @@ if (have_posts()){
                 <div class="row">
                     <div class="col-md-6">
                         <div class="">
-                             <h2 class="page-heading">Building here nice title</h2> 
+                             <h2 class="page-heading">Building At Stucki Farms</h2> 
                             <p class="rbto-25 text-grey-f707 line-h-27 mgrt-20">
                                                             
                                 At Stucki Farms, we want your home to be built to your style. You can choose one of our floor plans or you can design your own plan, you can use one of our preferred builders or you can bring your own preferred builder. Here, you can choose from the lot where you want to build your house, to the furniture you will use to turn your new house into your new home.

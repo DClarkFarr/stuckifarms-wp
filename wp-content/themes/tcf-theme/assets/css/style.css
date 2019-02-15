@@ -281,33 +281,51 @@ header .navbar-toggler {
     min-width: 100%;
 }
 .testimonials-carousel .text {
-    margin-left: 4rem;
+   
     font-size: 1.35rem;
-    width: 50%;
+    
     position: relative;
 }
 
-.testimonials-carousel .text:before {
-    content: " ";
-	border-top: 35px solid transparent;
-    border-bottom: 35px solid transparent; 
-	border-right: 35px solid #0A2E0C;
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    transform: translateY(-50%);
-    width: 0; 
-    height: 0; 
-}
 
-.testimonials-carousel .owl-dots {
-    margin-top: 5rem;
-}
+
 
 .newsletter-form-inline p {
     margin: 0;
 }
+@media(max-width: 1191px){
+    .video-banner {
+        background: url('/wp-content/themes/tcf-theme/assets/img/video-banner.jpg');
+        background-size: cover;
+    }
+    .video-banner video {
+        display: none;
+    }
+}
+@media(min-width: 1192px){
+    .testimonials-carousel .owl-dots {
+        margin-top: 5rem;
+    }
 
+    .testimonials-carousel .text {
+         margin-left: 4rem;
+         width: 50%;
+    }
+
+    .testimonials-carousel .text:before {
+        content: " ";
+        border-top: 35px solid transparent;
+        border-bottom: 35px solid transparent; 
+        border-right: 35px solid #0A2E0C;
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        transform: translateY(-50%);
+        width: 0; 
+        height: 0; 
+    }
+
+}
 @media(max-width: 1191px){
 	.main-menu {
 		background: #541B00;
@@ -467,6 +485,15 @@ footer .list-inline li a {
 	border-right: solid 1px #FFFFFF;
 	padding-right: 15px;
 	margin-right: 0;
+}
+
+@media(max-width: 1191px){
+    .live-here-breadcrumbs .breadcrumbs > div:not(:last-child) {
+        border-right: none;
+        padding-left: 15px;
+        display: block; 
+        text-align: center;
+    }
 }
 .live-here-breadcrumbs a {
 	opacity: 0.8;
@@ -850,13 +877,22 @@ footer .list-inline li a {
     margin-top: 30px;
 }
 
-.book-img .buttons {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    padding: 15px;
+@media(min-width: 1192px){
+    .book-img .buttons {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 15px;
+    }
+    .book-img {
+        box-shadow: 0px 1px 1px #888;
+        
+    }
 }
+
+
+
 .btn-book {
     text-transform: uppercase;
     font-size: 16px;
@@ -869,7 +905,7 @@ footer .list-inline li a {
 
 .book-img {
     position: relative;
-    box-shadow: 0px 1px 1px #888;
+    box-shadow: unset;
 }
 
 .mgrl-15 {
@@ -1375,4 +1411,11 @@ footer .list-inline li a {
 .ldgxTabbedContent .ldgxTabContentCalendar h2 {
     margin-left: 0;
     margin-right: 0;
+}
+
+@media(max-width: 1191px){
+    #property-slider img {
+        min-width: unset;
+        max-width: 100%;
+    }
 }

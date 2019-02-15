@@ -7,7 +7,7 @@
             <div class="owl-carousel testimonials-carousel">
                 
                 <div class="item">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-block d-lg-flex text-center text-lg-left justify-content-center align-items-center">
                         <div class="author text-center text-theme">
                             <div class="img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/testimonials/quinn-alan-gallup.jpg" alt="">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-block d-lg-flex text-center text-lg-left justify-content-center align-items-center">
                         <div class="author text-center text-theme">
                             <div class="img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/testimonials/erika-rogers.jpg" alt="">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-block d-lg-flex text-center text-lg-left justify-content-center align-items-center">
                         <div class="author text-center text-theme">
                             <div class="img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/testimonials/mrzshadow.jpg" alt="">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-block d-lg-flex text-center text-lg-left justify-content-center align-items-center">
                         <div class="author text-center text-theme">
                             <div class="img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/testimonials/justin-madsen.jpg" alt="">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="d-block d-lg-flex text-center text-lg-left justify-content-center align-items-center">
                         <div class="author text-center text-theme">
                             <div class="img">
                                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/testimonials/nicholas-ashworth.jpg" alt="">
