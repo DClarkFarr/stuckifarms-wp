@@ -23,7 +23,8 @@
             <div class="content-block text-white p-5 mt-auto">
                 <h1>STUCKI FARMS</h1>
                 <h4>
-                    Come visit us and see why Stucki Farms is<br>
+                    Come visit us and see why Stucki Farms is
+                    <div class="hidden-md-down"></div>
                     "A Great Place To Come Home To!"
                 </h4>
                 <a class="btn btn-lg btn-square btn-theme-alt mt-5" href="<?php echo site_url(); ?>/about/">
@@ -43,7 +44,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h2 class="text-theme mb-5 mr-lg-5 pr-xl-5">
+                <h2 class="text-theme mb-1 mb-lg-5 mr-lg-5 pr-xl-5">
                     A community
                     planned for
                     families

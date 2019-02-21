@@ -69,7 +69,7 @@
 							<span class="d-inline-block">
 								All Rights Reserved 2018 Stucki Farms Inc.
 							</span>
-							<span class="d-inline-block px-3">
+							<span class="d-inline-block px-3 hidden-md-down">
 								|
 							</span>
 							<span class="d-inline-block">

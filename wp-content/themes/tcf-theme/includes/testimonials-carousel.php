@@ -1,9 +1,9 @@
-<section class="section testimonials-carousel-section">
+<section class="section section-sm-sm testimonials-carousel-section">
     <div class="container">
-        <h2 class="text-center transform-uppercase text-dark mb-5">
+        <h2 class="text-center transform-uppercase text-dark mb-1 mb-lg-5">
             WHAT PEOPLE SAY ABOUT STUCKI FARMS
         </h2>
-        <div class="section">
+        <div class="section section-sm-sm">
             <div class="owl-carousel testimonials-carousel">
                 
                 <div class="item">

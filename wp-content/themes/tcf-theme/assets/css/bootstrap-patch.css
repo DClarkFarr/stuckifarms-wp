@@ -104,6 +104,9 @@
 }
 @media (max-width: 575px)
 {
+    .section-sm-sm {
+      padding: 25px 0;
+    }
     .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
     .hidden-xs-up,
     .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
@@ -116,6 +119,9 @@
 /* Breakpoint SM */
 @media (min-width: 576px) and (max-width: 767px)
 {
+    .section-sm-sm {
+      padding: 25px 0;
+    }
     .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
     .hidden-xs-up, .hidden-sm-up,
     .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
