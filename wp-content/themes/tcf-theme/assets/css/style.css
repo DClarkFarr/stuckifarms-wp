@@ -1419,3 +1419,85 @@ footer .list-inline li a {
         max-width: 100%;
     }
 }
+
+/**********
+Brandon's style changes
+
+Note: I am use overrides to prevent merge conflicts
+ let me know if you would rather have me edit the doc directly
+***********/
+
+@media(max-width:991px) {
+
+	/*video-banner*/
+
+	.video-banner h1 {
+		font-size: 1.7rem;
+		font-weight: inherit;
+	}
+
+	.video-banner .content-block {
+		background: rgba(84, 27, 0, 0.64);
+		margin-bottom: 5rem;
+		width: 66vw;
+		padding: 1rem!important;
+	}
+
+	.video-banner .h4, h4 {
+		font-size: .8rem;
+		font-weight: inherit;
+	}
+
+	.video-banner .mt-auto, .my-auto {
+		margin-top: 50px!important;
+	}
+
+	.video-banner .btn-square {
+		border-radius: 5px;
+		margin-top: 1rem!important;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+
+	/*over ride for video fix*/
+	video {
+		display: block;
+	}
+
+	/*home-search-wrap*/
+
+	.home-search-wrap .col-sm-3 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.home-search-wrap  .col-sm-2 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.home-search-wrap  .col-sm-1 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+
+	/*scaling overrides*/
+
+	.mb-5, .my-5 {
+		margin-bottom: 1rem!important;
+	}
+
+	.section {
+		padding: 25px 0!important;
+	}
+
+	footer .text-light {
+		color: #8895A9 !important;
+		text-align: center;
+	}
+
+}
