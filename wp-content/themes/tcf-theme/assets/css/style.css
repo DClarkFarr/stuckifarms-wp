@@ -1455,5 +1455,9 @@ Note: I am use overrides to prevent merge conflicts
 		padding-bottom: 1px;
 	}
 
+    .newsletter-form-inline .ajax-loader {
+        display: none;
+    }
+
 
 }
