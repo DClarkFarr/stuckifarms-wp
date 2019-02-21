@@ -35,7 +35,7 @@ while(have_posts()){
 			</div>
 			<div class="col-lg-6">
 				<h4>Our Location</h4>
-				<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.548412911879!2d-113.49603854793631!3d37.06824327979582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca50a460dd7e25%3A0x734bcebc0d15a700!2sHomestead+Court%2C+Washington%2C+UT+84780!5e0!3m2!1sen!2sus!4v1487824835837" width="600" height="520" frameborder="0" allowfullscreen="allowfullscreen"></iframe>	
+				<iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477.2631537771194!2d-113.49079865807371!3d37.06680473497855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca50a54a3272ef%3A0x44d270a85055bac1!2s5015+S+Cattail+Way%2C+Washington%2C+UT+84780!5e0!3m2!1sen!2sus!4v1550725481030" width="600" height="520" frameborder="0" allowfullscreen="allowfullscreen"></iframe>	
 			</div>
 		</div>
 
