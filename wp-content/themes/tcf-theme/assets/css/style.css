@@ -1456,7 +1456,7 @@ Note: I am use overrides to prevent merge conflicts
 	}
 
     .newsletter-form-inline .ajax-loader {
-        display: none;
+        display: none !important;
     }
 
 
