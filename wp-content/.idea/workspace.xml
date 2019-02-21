@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/tcf-theme/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="1278" column="26" selection-start-line="1278" selection-start-column="26" selection-end-line="1278" selection-end-column="26" />
+            <state relative-caret-position="267">
+              <caret line="1267" column="30" lean-forward="true" selection-start-line="1267" selection-start-column="30" selection-end-line="1267" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -127,12 +127,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550617074646</updated>
       <workItem from="1550617075794" duration="4198000" />
-      <workItem from="1550768322882" duration="851000" />
+      <workItem from="1550768322882" duration="995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5049000" />
+    <option name="totallyTimeSpent" value="5193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1440" height="834" extended-state="0" />
@@ -165,8 +165,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/themes/tcf-theme/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="1278" column="26" selection-start-line="1278" selection-start-column="26" selection-end-line="1278" selection-end-column="26" />
+        <state relative-caret-position="267">
+          <caret line="1267" column="30" lean-forward="true" selection-start-line="1267" selection-start-column="30" selection-end-line="1267" selection-end-column="30" />
         </state>
       </provider>
     </entry>
