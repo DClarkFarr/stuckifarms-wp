@@ -877,7 +877,7 @@ footer .list-inline li a {
     margin-top: 30px;
 }
 
-@media(min-width: 1192px){
+/*@media(min-width: 1192px){*/
     .book-img .buttons {
         position: absolute;
         bottom: 0;
@@ -887,9 +887,9 @@ footer .list-inline li a {
     }
     .book-img {
         box-shadow: 0px 1px 1px #888;
-        
+
     }
-}
+/*}*/
 
 
 
@@ -1272,12 +1272,13 @@ footer .list-inline li a {
         text-transform: uppercase;
         color: #fff;
         background: #0A2E0C;
-        position: absolute;
-        bottom: -8px;
-        right: -8px;
+        /*position: absolute;*/
+        /*bottom: -8px;*/
+        /*right: -8px;*/
         font-size: 15px;
+		margin-left: 25px;
         font-family: roboto-reg;
-        padding: 4px 19px;
+        /*padding: 4px 19px;*/
         box-shadow: 1px 1px 2px #888;
     }
     .m-btn-book-2 {
