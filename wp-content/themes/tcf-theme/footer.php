@@ -33,7 +33,7 @@
 							<ul class="list-unstyled">
 								<li><a href="<?php echo site_url(); ?>/contact/">Work Here</a></li>
 								<li><a href="<?php echo site_url(); ?>/vacation-here/cottages/">Cottages</a></li>
-								<li><a href="<?php echo site_url(); ?>/invest-here/villas/">Villas</a></li>
+								<li><a href="<?php echo site_url(); ?>/invest-here/buy-a-villa/">Villas</a></li>
 								<li><a href="<?php echo site_url(); ?>/news/">News</a></li>
 							</ul>
 						</div>
