@@ -1462,3 +1462,7 @@ Note: I am use overrides to prevent merge conflicts
 
 
 }
+
+body > img:last-child {
+	display: none;
+}
