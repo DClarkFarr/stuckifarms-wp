@@ -7,6 +7,7 @@
 
 		<title><?php wp_title(''); ?><?php if(is_front_page()) {bloginfo('name');}?></title>
 
+		<?php tcf_favicon(); ?>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
