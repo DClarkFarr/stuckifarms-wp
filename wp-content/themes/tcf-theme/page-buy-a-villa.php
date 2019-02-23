@@ -39,7 +39,7 @@ if (have_posts()){
                 <h2 class="page-heading">The Villas at the Cottages</h2>
                 
                 <div class="book-img no-shadow">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/main-villa-thumb.jpg" class="img-fluid" alt="">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/main-villa-thumb.jpg?v=2" class="img-fluid" alt="">
                     <div class="buttons text-right">
                         <a href="<?php the_permalink( get_field('vila_property_page', 'option') ); ?>" class="btn btn-theme btn-book">Details</a>
                         <a href="<?php echo home_url('/contact/'); ?>" class="btn btn-book btn-theme m-btn-book mgrr-10">Buy a Villa</a>
