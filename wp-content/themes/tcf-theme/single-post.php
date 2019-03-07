@@ -48,9 +48,11 @@ page_title_block(get_the_title( $blogPage->ID ));
 
 								<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:' ) . '</span> ', ', ', '</p>' ); ?>
 
+								<?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+								
 								<?php comments_template(); ?>
 
-								<?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
+								
 	        </div>
 
 
