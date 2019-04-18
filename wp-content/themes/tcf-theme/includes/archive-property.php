@@ -2,7 +2,7 @@
     <div class="container">
         <?php 
         $category = get_field('page_category', $page->ID);
-        $posts_per_page = 6;
+        $posts_per_page = 9;
         $posts_per_row = 3;
 
         $the_query = new WP_Query([
