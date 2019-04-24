@@ -19,4 +19,5 @@ wp-signup.php
 wp-trackback.php
 xmlrpc.php
 git-pull.php
+wp-config.php
 .htaccess

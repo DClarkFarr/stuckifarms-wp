@@ -64,34 +64,35 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
+                        <div class="icon-block pr-4 mb-4 mb-lg-0">
+                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-villa/" class="btn-mask">
+                                <i class="mb-4 far fa-hotel"></i>
+                                <span class="text-dark font-weight-bold">Buy a vacation rental</span>
+                                <span class="text-lighter mb-1 d-inline=-block">
+                                    Cottages, cottages court, villas for sale.
+                                </span>
+                            </a>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-lg-6">
                         <div class="icon-block pr-4 pb-lg-3 mb-4">
                             <a class="btn-mask" href="<?php echo site_url(); ?>/vacation-rentals/">
                                 <i class="mb-4 far fa-plane"></i>
-                                <span class="text-dark font-weight-bold">Spend Vacation here</span>
+                                <span class="text-dark font-weight-bold">Spend vacation here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
                                     Relax and enjoy beautiful Southern Utah in one of its newest resorts
                                 </span>
                             </a>
                         </div>
                     </div>
-                    <div class="w-100"></div>
                     <div class="col-lg-6">
                         <div class="icon-block pr-4 mb-4 mb-lg-0">
-                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-villa/" class="btn-mask">
-                                <i class="mb-4 far fa-hotel"></i>
-                                <span class="text-dark font-weight-bold">The Villa at the Cottage</span>
-                                <span class="text-lighter mb-1 d-inline=-block">
-                                    The Villa sits 50 feet from the resort pool and lazy river.
-                                </span>
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="icon-block pr-4 mb-4 mb-lg-0">
-                            <a href="<?php echo site_url(); ?>/invest-here/build-here/" class="btn-mask">
+                            <a href="<?php echo site_url(); ?>/live-here/lots-for-sale/" class="btn-mask">
                                 <i class="mb-4 far fa-truck"></i>
-                                <span class="text-dark font-weight-bold">Build Here</span>
+                                <span class="text-dark font-weight-bold">Build here</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
                                     Bring your plan and your builder and Build it your way.
                                 </span>
@@ -150,7 +151,7 @@
         
         
         <div class="overlay">
-            <h2 class="page-heading white center fs-50">The  COTTAGES At The Village</h2>
+            <h2 class="page-heading white center fs-50">Stucki Farms RESORT</h2>
             
             <div class="villa-types">
                 <div class="row mgrt-40">
