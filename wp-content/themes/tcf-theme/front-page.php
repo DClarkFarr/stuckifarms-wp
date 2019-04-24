@@ -36,9 +36,11 @@
     
 </section>
 
-<div class="home-search-wrap">
-    <?php load_include('form-property-search'); ?>
-</div>   
+<section class="home-search-wrap section section-sm bg-theme">
+    <div class="container">
+        <?php load_include('form-property-search', ['params' => ['justify_row' => 'justify-content-center', 'button_primary' => false]]); ?>
+    </div>
+</section>   
        
 <section class="section section-lg planned-community">
     <div class="container">
