@@ -17,7 +17,7 @@
 					</p>
 					<div class="pt-5"></div>
 					<div class="d-flex justify-content-between">
-						<a href="<?php echo home_url('vacation-here/cottages/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
+						<a href="<?php echo home_url('vacation-rentals/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
 						<a href="<?php echo home_url('invest-here/buy-a-cottage/'); ?>" class="btn btn-theme-light btn-wide">BUY NOW</a>
 					</div>
 				</div>
@@ -38,7 +38,7 @@
 					</p>
 					<div class="pt-5"></div>
 					<div class="d-flex justify-content-between">
-						<a href="<?php echo home_url('vacation-here/cottages/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
+						<a href="<?php echo home_url('vacation-rentals/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
 						<a href="<?php echo home_url('invest-here/buy-a-cottage/'); ?>" class="btn btn-theme-light btn-wide">BUY NOW</a>
 					</div>
 				</div>
@@ -59,7 +59,7 @@
 					</p>
 					<div class="pt-1"></div>
 					<div class="d-flex justify-content-between">
-						<a href="<?php echo home_url('vacation-here/villas/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
+						<a href="<?php echo home_url('vacation-rentals/'); ?>" class="btn btn-theme-light btn-wide">BOOK NOW</a>
 						<a href="<?php echo home_url('invest-here/buy-a-villa/'); ?>" class="btn btn-theme-light btn-wide">BUY NOW</a>
 					</div>
 				</div>
