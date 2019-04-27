@@ -12,6 +12,10 @@ Site Theme
 	background-color: #0A2E0C;
 }
 
+.btn-theme-light {
+    background-color: #31661E;
+}
+
 .text-theme,
 .btn-link.btn-link-theme,
 .nav-link.nav-link-theme,
@@ -37,6 +41,13 @@ Site Theme
 .btn-theme:focus {
 	background-color: #214812;
 }
+
+.btn-theme-light.active,
+.btn-theme-light:hover,
+.btn-theme-light:focus {
+	background-color: #265216;
+}
+
 
 .text-theme-alt {
 	color: #541B00;
@@ -74,13 +85,18 @@ Site Theme
 .link-white,
 .link-white.active,
 .link-white:focus,
-.link-white:hover
+.link-white:hover,
+.btn-theme-light,
+.btn-theme-light.active,
+.btn-theme-light:focus,
+.btn-theme-light:hover
+
 {
 	color: #FFFFFF;
 }
 
 .text-black {
-	background-color: #000000;
+	color: #000000;
 }
 .bg-black {
 	background-color: #000000;
@@ -107,6 +123,10 @@ Site Theme
 .btn-square {
 	border-radius: 0;
 	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.btn-wide {
+    padding-left: 2rem;
 	padding-right: 2rem;
 }
 

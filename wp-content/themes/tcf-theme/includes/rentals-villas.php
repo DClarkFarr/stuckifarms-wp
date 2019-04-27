@@ -15,4 +15,4 @@
     </div>
 </section>
 
-<?php load_include('cta-newsletter-form'); ?>
+<?php load_include('cta-newsletter-inline'); ?>

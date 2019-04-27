@@ -67,7 +67,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="icon-block pr-4 mb-4 mb-lg-0">
-                            <a href="<?php echo site_url(); ?>/invest-here/buy-a-villa/" class="btn-mask">
+                            <a href="<?php echo site_url(); ?>/buy-a-vacation-rental/" class="btn-mask">
                                 <i class="mb-4 far fa-hotel"></i>
                                 <span class="text-dark font-weight-bold">Buy a vacation rental</span>
                                 <span class="text-lighter mb-1 d-inline=-block">
@@ -165,7 +165,7 @@
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/SC-8-2-cir2.jpg" class="rounded-circle cir-img" alt="">
                         <h3 class="cir-txt">Cottage Courts</h3>
-                        <div class="text-center"><a href="<?php echo site_url(); ?>/invest-here/buy-a-cottage/" class="btn btn-theme btn-book-green m-btn-book-2">Buy Now</a></div>
+                        <div class="text-center"><a href="<?php echo site_url(); ?>/buy-a-vacation-rental/" class="btn btn-theme btn-book-green m-btn-book-2">Buy Now</a></div>
                     </div>
                     <div class="col-md-4">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/cir3.png" class="rounded-circle cir-img" alt="">

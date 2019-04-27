@@ -138,6 +138,10 @@ $otherPages = [
         'post_title' => 'Submit Plan',
         'post_name' => 'submit-plan',
     ],
+    [
+        'post_title' => 'Buy a Vacation Rental',
+        'post_name' => 'buy-a-vacation-rental',
+    ],
 ];
 
 
