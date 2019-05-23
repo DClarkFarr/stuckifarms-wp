@@ -7,7 +7,7 @@ $fields = [
 
 $fields = array_map(function($field) use ($property){
     $row = get_field_object($field, $property->ID);
-    if($row['name'] == 'size' || $row['name'] == 'price'){
+    if($row['name'] == 'size' || $row['name'] == 'price' || $row['name'] == 'lot_size'){
         $row['value'] = number_format( $row['value'] ?: 0, 0, '', ','); 
     }
     return $row;
