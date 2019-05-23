@@ -1,8 +1,9 @@
 <?php 
-$params = array_merge([
+$args = array_merge([
     'justify_row' => '',
     'button_primary' => true,
-], !empty($params) ? $params : []);
+    'text_class' => 'text-white',
+], !empty($args) ? $args : []);
 
 $price_min = [
     '100' => '100k+',
@@ -74,48 +75,49 @@ $renderOptions = function($options){
 <form action="<?php echo get_home_url() . '/property-search/'; ?>">
     <input type="hidden" name="new_search" value="1">
     
-    <div class="row <?php echo $params['justify_row']; ?>">
-        <div class="col-md-3">
-            <label for="" class="text-white">Property Type</label>
+    <div class="row no-gutters <?php echo $args['justify_row']; ?>">
+        <div class="col-md-3 px-2">
+            <label for="" class="<?php echo $args['text_class']; ?>">Property Type</label>
             <select name="category[]" class="form-control">
                 <option value="">Any</option>
                 <?php $renderOptions($category) ?>
                 
             </select>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2 px-2">
             <div class="form-group">
-                <label class="text-white">Price</label>
+                <label class="<?php echo $args['text_class']; ?>">Price</label>
                 <select name="price_min" class="form-control">
                     <option value="">Any</option>
                     <?php $renderOptions($price_min) ?>
                 </select>
             </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 px-2">
             <div class="form-group">
-                <label class="text-white">Bedrooms</label>
+                <label class="<?php echo $args['text_class']; ?>">Bedrooms</label>
                 <select name="beds_min" class="form-control">
                     <option value="">Any</option>
                     <?php $renderOptions($beds_min) ?>
                 </select>
             </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 px-2">
             <div class="form-group">
-                <label class="text-white">Bathrooms</label>
+                <label class="<?php echo $args['text_class']; ?>">Bathrooms</label>
                 <select name="baths_min" class="form-control">
                     <option value="">Any</option>
                     <?php $renderOptions($baths_min) ?>
                 </select>
             </div>
         </div>
-        <div class="col-md-1">
+        <div class="col-md-1 px-2">
             <div class="form-group">
                 <div><label>&nbsp;</label></div>
-                <button class="btn <?php echo $params['button_primary'] ? 'btn-theme' : 'btn-light'; ?>"><i class="far fa-search"></i> Search</button>
+                <button class="btn <?php echo $args['button_primary'] ? 'btn-theme' : 'btn-light'; ?>"><i class="far fa-search"></i> Search</button>
             </div>
         </div>
     </div>
     
 </form>
+

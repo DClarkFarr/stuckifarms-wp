@@ -1,8 +1,45 @@
+<?php 
+
+
+$simple_fields = [
+    'category',
+    'price_min',
+    'beds_min',
+    'baths_min',
+    'page',
+    'p',
+];
+
+$get_fields = array_keys(array_filter($_GET ?: []));
+$get_fields = array_filter($get_fields, function($field) use ($simple_fields) {
+    return !in_array($field, $simple_fields);
+});
+
+if( count($get_fields) > 1 ){
+    $advanced = true;
+    $simple = false;
+}else{
+    $advanced = false;
+    $simple = true;
+}
+
+?>
+
 <section class="section">
     <div class="container">
-        <form action="" method="GET">
+        <div class="row justify-content-center">
+            <div class="col-lg-8"><h2>Property Search Form</h2></div>
+        </div>
+        <div class="simple-form" style="<?php echo ($advanced ? 'display: none;' : ''); ?>">
             <div class="row justify-content-center">
-                <div class="col-lg-8"><h2>Property Search Form</h2></div>
+                <div class="col-lg-10 offset-lg-2">
+                    <?php load_include('form-property-search', ['text_class' => 'text-default']); ?>
+                </div>
+            </div>
+            
+        </div>
+        <form class="advanced-form" style="<?php echo ($simple ? 'display: none;' : ''); ?>" action="" method="GET">
+            <div class="row justify-content-center">
                 <div class="w-100"></div>
                 <div class="col-lg-4">
                     <div class="form-group">
@@ -133,3 +170,29 @@
         </form>
     </div>
 </section>
+
+<script>
+$(function(){
+    var advanced = $('.advanced-form');
+    var simple = $('.simple-form');
+
+    simple.find('form .col-md-1:last').before('<div class="col-md-2">'+
+        '<label>&nbsp</label>'+
+        '<button type="button" class="btn btn-link btn-block show-advanced">Advanced <i class="far fa-caret-down"></i></button>'+ 
+    '</div>');
+
+    advanced.find('.col-lg-8:last .form-group.text-right').prepend('<button class="btn btn-link hide-advanced" type="button">Simple Search <i class="far fa-caret-up"></i></button>');
+
+    $('.hide-advanced').on('click', function(){
+        advanced.slideUp(250);
+        simple.slideDown(250);
+    })
+    $('.show-advanced').on('click', function(){
+        simple.slideUp(250);
+        advanced.slideDown(300);
+    })
+
+
+})
+
+</script>

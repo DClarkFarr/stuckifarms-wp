@@ -122,11 +122,20 @@ if (have_posts()){
 		$the_query = new WP_Query($args);
 
 		?>
+		<?php /*
 		<section class="pt-3 pb-2 bg-black">
 			<div class="container">
 				<?php load_include('form-property-search', ['params' => ['button_primary' => false]]); ?>
 			</div>	
 		</section>
+		*/ ?>
+
+		<section class="bg-white">
+			<div class="container">
+				<?php load_include('form-property-advanced-search'); ?>
+			</div>
+		</section>
+
 		
 		<section class="section">
 			<div class="container">
