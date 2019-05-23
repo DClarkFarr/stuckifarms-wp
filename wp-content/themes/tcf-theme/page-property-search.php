@@ -101,6 +101,29 @@ if (have_posts()){
 				);
 			}
 		}
+
+		$rangeParams = ['size'];
+		foreach($rangeParams as $param){
+			if( !empty($_GET[$param]) ){
+				$value = $_GET[$param];
+				$arr = explode('-', $value);
+				if( !empty($arr[0]) ){
+					$meta_args[] = array(
+						'key'	  	=>  $param,
+						'value'	  	=> $arr[0],
+						'compare' 	=> '>=',
+					);
+				}
+				if( !empty($arr[1]) ){
+					$meta_args[] = array(
+						'key'	  	=>  $param,
+						'value'	  	=> $arr[1],
+						'compare' 	=> '<=',
+					);
+				}
+			}
+		}
+
 		$args = [
 			'post_type' => 'property',
 			'posts_per_page' => $posts_per_page, 

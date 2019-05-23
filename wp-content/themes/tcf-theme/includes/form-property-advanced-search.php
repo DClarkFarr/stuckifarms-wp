@@ -15,7 +15,7 @@ $get_fields = array_filter($get_fields, function($field) use ($simple_fields) {
     return !in_array($field, $simple_fields);
 });
 
-if( count($get_fields) > 1 ){
+if( count($get_fields) > 0 ){
     $advanced = true;
     $simple = false;
 }else{
@@ -112,6 +112,16 @@ if( count($get_fields) > 1 ){
 
                                     wp_reset_postdata();
                                     ?>
+                                </select>
+                            </div>
+                            <div class="col-lg-12 pt-3">
+                                <label class="mb-0 text-bold">Area/SqFt</label>
+                                <select name="size" class="form-control">
+                                    <option value="">Any</option>
+                                    <option <?php echo (isset($_GET['size']) && $_GET['size'] == '1600-1900' ? 'selected' : ''); ?> value="1600-1900">1600-1900</option>
+                                    <option <?php echo (isset($_GET['size']) && $_GET['size'] == '1900-2200' ? 'selected' : ''); ?> value="1900-2200">1900-2200</option>
+                                    <option <?php echo (isset($_GET['size']) && $_GET['size'] == '2200-3000' ? 'selected' : ''); ?> value="2200-3000">2200-3000</option>
+                                    <option <?php echo (isset($_GET['size']) && $_GET['size'] == '3000' ? 'selected' : ''); ?> value="3000-">3000 Up</option>
                                 </select>
                             </div>
                         </div>

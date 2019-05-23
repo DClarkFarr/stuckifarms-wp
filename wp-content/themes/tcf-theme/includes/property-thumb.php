@@ -6,12 +6,18 @@ $fields = [
 ];
 
 $fields = array_map(function($field) use ($property){
-    return get_field_object($field, $property->ID);
+    $row = get_field_object($field, $property->ID);
+    if($row['name'] == 'size' || $row['name'] == 'price'){
+        $row['value'] = number_format( $row['value'] ?: 0, 0, '', ','); 
+    }
+    return $row;
 }, $fields);
 
 $fields = array_filter($fields, function($field){
     return isset($field['value']) && strlen($field['value']) > 0;
 });
+
+
 
 ?>
 <div class="card property property-<?php echo $property_type; ?> mb-4">
