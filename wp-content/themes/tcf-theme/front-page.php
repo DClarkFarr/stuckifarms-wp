@@ -16,7 +16,7 @@
 
 <section class="video-banner first-block">
 	<video autoplay muted loop id="myVideo">
-		<source src="<?php echo get_img_directory(); ?>/home-video-web.mp4" type="video/mp4">
+		<source src="<?php echo get_assets_directory(); ?>/video/home-video-web.mp4" type="video/mp4">
 	</video>
     <div class="container h-100">
         <div class="banner-content h-100 d-flex flex-columns">

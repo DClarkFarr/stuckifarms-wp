@@ -224,7 +224,11 @@ function tcf_theme_support() {
 		'comment-list',
 		'search-form',
 		'comment-form'
-	) );
+	));
+
+	add_theme_support( 'custom-header', array(
+		'video' => true,
+	));
 
 }
 
