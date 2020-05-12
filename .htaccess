@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # BEGIN WP Rocket v3.5.4
 # Use UTF-8 encoding for anything served text/plain or text/html
 AddDefaultCharset UTF-8
@@ -132,60 +130,15 @@ RewriteCond "%{DOCUMENT_ROOT}/wp-content/cache/wp-rocket/%{HTTP_HOST}%{REQUEST_U
 RewriteRule .* "/wp-content/cache/wp-rocket/%{HTTP_HOST}%{REQUEST_URI}/index%{ENV:WPR_SSL}%{ENV:WPR_WEBP}.html%{ENV:WPR_ENC}" [L]
 </IfModule>
 # END WP Rocket
->>>>>>> 5550206949fb4adafe91dd005171c2d89e056663
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-<<<<<<< HEAD
-
-=======
->>>>>>> 5550206949fb4adafe91dd005171c2d89e056663
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-<<<<<<< HEAD
-
-# END WordPress
-
-
-# Protect wp-config.txt
-<files wp-config.php>
-order allow,deny
-deny from all
-</files>
-
-# Protect wp-config but still allow some file types
-<files ~ ".(xml|css|jpe?g|png|gif|js)$">
-allow from all
-</files>
-
-
-# Protect wp-includes directory
-# Block the include-only files
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^wp-admin/includes/ - [F,L]
-RewriteRule !^wp-includes/ - [S=3]
-RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
-RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
-RewriteRule ^wp-includes/theme-compat/ - [F,L]
-</IfModule>
-
-# Prevent Directory Listing
-Options All -Indexes
-
-# Protect .htaccess file itself
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
-
-<IfModule mod_deflate.c>
-=======
 # END WordPress
 # Protect wp-config.txt
 <files wp-config.php>
@@ -215,7 +168,6 @@ Options All -Indexes
 	deny from all
 </Files>
 #<IfModule mod_deflate.c>
->>>>>>> 5550206949fb4adafe91dd005171c2d89e056663
   AddOutputFilterByType DEFLATE text/html
   AddOutputFilterByType DEFLATE text/css
   AddOutputFilterByType DEFLATE text/javascript
@@ -237,35 +189,10 @@ Options All -Indexes
   AddOutputFilterByType DEFLATE font/ttf
   AddOutputFilterByType DEFLATE font/otf
   AddOutputFilterByType DEFLATE font/opentype
-<<<<<<< HEAD
-
-=======
->>>>>>> 5550206949fb4adafe91dd005171c2d89e056663
 # For Olders Browsers Which Cant Handle Compression
   BrowserMatch ^Mozilla/4 gzip-only-text/html
   BrowserMatch ^Mozilla/4\.0[678] no-gzip
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
-<<<<<<< HEAD
-</IfModule>
-
-
-
-## EXPIRES CACHING ##
-#<IfModule mod_expires.c>
-#ExpiresActive On
-#ExpiresByType image/jpg "access 1 year"
-#ExpiresByType image/jpeg "access 1 year"
-#ExpiresByType image/gif "access 1 year"
-#ExpiresByType image/png "access 1 year"
-#ExpiresByType text/css "access 1 month"
-#ExpiresByType text/html "access 1 month"
-#ExpiresByType application/pdf "access 1 month"
-#ExpiresByType text/x-javascript "access 1 month"
-#ExpiresByType application/x-shockwave-flash "access 1 month"
-#ExpiresByType image/x-icon "access 1 year"
-#ExpiresDefault "access 1 month"
-#</IfModule>
-=======
 #</IfModule>
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
@@ -314,4 +241,3 @@ Options All -Indexes
 </IfModule>
 </Files>
 # END Wordfence WAF
->>>>>>> 5550206949fb4adafe91dd005171c2d89e056663
