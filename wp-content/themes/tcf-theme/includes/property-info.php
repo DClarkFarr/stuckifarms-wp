@@ -37,9 +37,9 @@
     </div>
     <div class="col-md-7">
         <p class="text-bold">Description</p>
-        <p class="description">
+        <div class="description">
             <?php the_content(); ?>
-        </p>
+        </div>
         <br>
         <div class="row">
             <?php 

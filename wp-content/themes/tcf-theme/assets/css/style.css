@@ -1489,3 +1489,7 @@ body > img:last-child {
 .single-post .sfsi_socialwpr {
     display: block !important;
 }
+
+.description iframe {
+    max-width: 100%;
+}
