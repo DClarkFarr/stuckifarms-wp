@@ -20,4 +20,15 @@ wp-trackback.php
 xmlrpc.php
 git-pull.php
 wp-config.php
-.htaccess
+error_log
+sitemap.xml
+robots.txt
+wordfence-waf.php
+wp-content/advanced-cache.php
+wp-content/cache/
+wp-content/themes/tcf-theme/error_log
+wp-content/themes/twentynineteen/error_log
+wp-content/themes/twentytwenty/
+wp-content/wflogs/
+wp-content/wp-rocket-config/
+

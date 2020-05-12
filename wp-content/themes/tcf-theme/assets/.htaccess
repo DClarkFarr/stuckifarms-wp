@@ -1,0 +1,3 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^video/(.*)$ videos.php?video=$1 [L,QSA]
